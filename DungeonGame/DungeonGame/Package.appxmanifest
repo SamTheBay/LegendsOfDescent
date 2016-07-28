@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="9610AwesomerGames.LegendsofDescent" Publisher="CN=7F772956-D6F3-4C2C-B63D-5C37D34C8DC7" Version="0.5.3.0" />
+  <Properties>
+    <DisplayName>Legends of Descent</DisplayName>
+    <PublisherDisplayName>Awesomer Games</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="LegendsOfDescentW8.App">
+      <VisualElements DisplayName="Legends of Descent" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Legends of Descent" ForegroundText="light" BackgroundColor="#000000">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" ShortName="LoD" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#000000" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="picturesLibrary" />
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

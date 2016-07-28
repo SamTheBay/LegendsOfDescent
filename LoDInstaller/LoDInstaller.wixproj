@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{92D4EEE8-32EC-43B9-87EC-EC9A3416B37F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Package</OutputType>
+    <RootNamespace>MyGame</RootNamespace>
+    <OutputName>LoDInstaller</OutputName>
+    <WixToolPath Condition=" '$(WixToolPath)' == '' ">$(SharpDevelopBinPath)\Tools\Wix</WixToolPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(WixToolPath)\wix.targets</WixTargetsPath>
+    <WixTasksPath Condition=" '$(WixTasksPath)' == '' ">$(WixToolPath)\WixTasks.dll</WixTasksPath>
+    <SupressIces>ICE45</SupressIces>
+    <DefineConstants>DATADIR=$(SharpDevelopBinPath)\..\data\resources\InstallerBitmaps</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+  <Import Project="$(WixToolPath)\wix.targets" />
+  <ItemGroup>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\Items.xml">
+      <Link>Content\Content\Data\Items.xml</Link>
+    </None>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\Items.xml" />
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\LegendaryItems.xml">
+      <Link>Content\Content\Data\LegendaryItems.xml</Link>
+    </None>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\LegendaryItems.xml" />
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\Levels.xml">
+      <Link>Content\Content\Data\Levels.xml</Link>
+    </None>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\Levels.xml" />
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\MagicProperties.xml">
+      <Link>Content\Content\Data\MagicProperties.xml</Link>
+    </None>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\MagicProperties.xml" />
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\Quests.xml">
+      <Link>Content\Content\Data\Quests.xml</Link>
+    </None>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\Quests.xml" />
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\townMap.xml">
+      <Link>Content\Content\Data\townMap.xml</Link>
+    </None>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\Content\Data\townMap.xml" />
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\LegendsOfDescent.Shared.dll">
+      <Link>Content\LegendsOfDescent.Shared.dll</Link>
+    </None>
+    <None Include="..\DungeonGame\DungeonGame\bin\x86\Release\LegendsOfDescentWindows.exe">
+      <Link>Content\LegendsOfDescentWindows.exe</Link>
+    </None>
+    <None Include="Content\Content\Audio\Body_Hit_08.xnb" />
+    <None Include="Content\Content\Audio\Body_Hit_10.xnb" />
+    <None Include="Content\Content\Audio\Body_Hit_11.xnb" />
+    <None Include="Content\Content\Audio\Body_Hit_43.xnb" />
+    <None Include="Content\Content\Audio\Boom.xnb" />
+    <None Include="Content\Content\Audio\BowShoot.xnb" />
+    <None Include="Content\Content\Audio\BoxOpen1.xnb" />
+    <None Include="Content\Content\Audio\BoxOpen2.xnb" />
+    <None Include="Content\Content\Audio\BoxOpen3.xnb" />
+    <None Include="Content\Content\Audio\Chain1.xnb" />
+    <None Include="Content\Content\Audio\Chain2.xnb" />
+    <None Include="Content\Content\Audio\Chain3.xnb" />
+    <None Include="Content\Content\Audio\DoorClose1.xnb" />
+    <None Include="Content\Content\Audio\DoorClose2.xnb" />
+    <None Include="Content\Content\Audio\DoorClose3.xnb" />
+    <None Include="Content\Content\Audio\DoorClose4.xnb" />
+    <None Include="Content\Content\Audio\DoorOpen1.xnb" />
+    <None Include="Content\Content\Audio\DoorOpen2.xnb" />
+    <None Include="Content\Content\Audio\DoorOpen3.xnb" />
+    <None Include="Content\Content\Audio\Drop.xnb" />
+    <None Include="Content\Content\Audio\Element1.xnb" />
+    <None Include="Content\Content\Audio\Element2.xnb" />
+    <None Include="Content\Content\Audio\Element3.xnb" />
+    <None Include="Content\Content\Audio\Element4.xnb" />
+    <None Include="Content\Content\Audio\Fear1.xnb" />
+    <None Include="Content\Content\Audio\Fear2.xnb" />
+    <None Include="Content\Content\Audio\Fear3.xnb" />
+    <None Include="Content\Content\Audio\Fear4.xnb" />
+    <None Include="Content\Content\Audio\Fear5.xnb" />
+    <None Include="Content\Content\Audio\Fire1.xnb" />
+    <None Include="Content\Content\Audio\Fire2.xnb" />
+    <None Include="Content\Content\Audio\Fire3.xnb" />
+    <None Include="Content\Content\Audio\Frozen1.xnb" />
+    <None Include="Content\Content\Audio\Frozen2.xnb" />
+    <None Include="Content\Content\Audio\Frozen3.xnb" />
+    <None Include="Content\Content\Audio\Ghost1.xnb" />
+    <None Include="Content\Content\Audio\Ghost2.xnb" />
+    <None Include="Content\Content\Audio\Ghost3.xnb" />
+    <None Include="Content\Content\Audio\Ghost4.xnb" />
+    <None Include="Content\Content\Audio\Ghost5.xnb" />
+    <None Include="Content\Content\Audio\Gold1.xnb" />
+    <None Include="Content\Content\Audio\Gold2.xnb" />
+    <None Include="Content\Content\Audio\Gold3.xnb" />
+    <None Include="Content\Content\Audio\HeavyDrop1.xnb" />
+    <None Include="Content\Content\Audio\HeavyDrop2.xnb" />
+    <None Include="Content\Content\Audio\HeavyDrop3.xnb" />
+    <None Include="Content\Content\Audio\Invis1.xnb" />
+    <None Include="Content\Content\Audio\Invis2.xnb" />
+    <None Include="Content\Content\Audio\Invis3.xnb" />
+    <None Include="Content\Content\Audio\Invis4.xnb" />
+    <None Include="Content\Content\Audio\Invis5.xnb" />
+    <None Include="Content\Content\Audio\Magic1.xnb" />
+    <None Include="Content\Content\Audio\Magic2.xnb" />
+    <None Include="Content\Content\Audio\Magic3.xnb" />
+    <None Include="Content\Content\Audio\Magic4.xnb" />
+    <None Include="Content\Content\Audio\Magic5.xnb" />
+    <None Include="Content\Content\Audio\MainMusic.wma" />
+    <None Include="Content\Content\Audio\MainMusic.xnb" />
+    <None Include="Content\Content\Audio\MainMusic2.wma" />
+    <None Include="Content\Content\Audio\MainMusic2.xnb" />
+    <None Include="Content\Content\Audio\MainMusic3.wma" />
+    <None Include="Content\Content\Audio\MainMusic3.xnb" />
+    <None Include="Content\Content\Audio\menu_select.xnb" />
+    <None Include="Content\Content\Audio\MetalDrop.xnb" />
+    <None Include="Content\Content\Audio\Ork1.xnb" />
+    <None Include="Content\Content\Audio\Ork2.xnb" />
+    <None Include="Content\Content\Audio\Ork3.xnb" />
+    <None Include="Content\Content\Audio\Poison1.xnb" />
+    <None Include="Content\Content\Audio\Poison2.xnb" />
+    <None Include="Content\Content\Audio\Poison3.xnb" />
+    <None Include="Content\Content\Audio\Potion1.xnb" />
+    <None Include="Content\Content\Audio\Potion2.xnb" />
+    <None Include="Content\Content\Audio\Potion3.xnb" />
+    <None Include="Content\Content\Audio\Shout1.xnb" />
+    <None Include="Content\Content\Audio\Shout2.xnb" />
+    <None Include="Content\Content\Audio\Shout3.xnb" />
+    <None Include="Content\Content\Audio\Skel1.xnb" />
+    <None Include="Content\Content\Audio\Skel2.xnb" />
+    <None Include="Content\Content\Audio\Skel3.xnb" />
+    <None Include="Content\Content\Audio\Skel4.xnb" />
+    <None Include="Content\Content\Audio\Slow1.xnb" />
+    <None Include="Content\Content\Audio\Slow2.xnb" />
+    <None Include="Content\Content\Audio\Slow3.xnb" />
+    <None Include="Content\Content\Audio\SmallExplosion1.xnb" />
+    <None Include="Content\Content\Audio\SmallExplosion2.xnb" />
+    <None Include="Content\Content\Audio\SmallExplosion3.xnb" />
+    <None Include="Content\Content\Audio\Spark.xnb" />
+    <None Include="Content\Content\Audio\SpeedUp1.xnb" />
+    <None Include="Content\Content\Audio\SpeedUp2.xnb" />
+    <None Include="Content\Content\Audio\SpeedUp3.xnb" />
+    <None Include="Content\Content\Audio\StairsDown.xnb" />
+    <None Include="Content\Content\Audio\StairsUp.xnb" />
+    <None Include="Content\Content\Audio\Stomp1.xnb" />
+    <None Include="Content\Content\Audio\Stomp2.xnb" />
+    <None Include="Content\Content\Audio\Stomp3.xnb" />
+    <None Include="Content\Content\Audio\Stomp4.xnb" />
+    <None Include="Content\Content\Audio\Stone1.xnb" />
+    <None Include="Content\Content\Audio\Stone2.xnb" />
+    <None Include="Content\Content\Audio\Stone3.xnb" />
+    <None Include="Content\Content\Audio\Stone4.xnb" />
+    <None Include="Content\Content\Audio\Swing1.xnb" />
+    <None Include="Content\Content\Audio\Swing2.xnb" />
+    <None Include="Content\Content\Audio\Sword1.xnb" />
+    <None Include="Content\Content\Audio\Sword2.xnb" />
+    <None Include="Content\Content\Audio\Sword3.xnb" />
+    <None Include="Content\Content\Audio\Sword4.xnb" />
+    <None Include="Content\Content\Audio\Sword5.xnb" />
+    <None Include="Content\Content\Audio\Sword6.xnb" />
+    <None Include="Content\Content\Audio\TownPort.xnb" />
+    <None Include="Content\Content\Audio\TrapSet1.xnb" />
+    <None Include="Content\Content\Audio\TrapSet2.xnb" />
+    <None Include="Content\Content\Audio\TrapSet3.xnb" />
+    <None Include="Content\Content\Audio\TrapSet4.xnb" />
+    <None Include="Content\Content\Audio\TrapSet5.xnb" />
+    <None Include="Content\Content\Audio\TrapSpring1.xnb" />
+    <None Include="Content\Content\Audio\TrapSpring2.xnb" />
+    <None Include="Content\Content\Audio\TrapSpring3.xnb" />
+    <None Include="Content\Content\Audio\TrapSpring4.xnb" />
+    <None Include="Content\Content\Audio\TrapSpring5.xnb" />
+    <None Include="Content\Content\Audio\Trumpet.xnb" />
+    <None Include="Content\Content\Data\Items.xml" />
+    <None Include="Content\Content\Data\LegendaryItems.xml" />
+    <None Include="Content\Content\Data\Levels.xml" />
+    <None Include="Content\Content\Data\MagicProperties.xml" />
+    <None Include="Content\Content\Data\Quests.xml" />
+    <None Include="Content\Content\Data\townMap.xml" />
+    <None Include="Content\Content\Fonts\ButtonFont.xnb" />
+    <None Include="Content\Content\Fonts\CritFont.xnb" />
+    <None Include="Content\Content\Fonts\DCFont.xnb" />
+    <None Include="Content\Content\Fonts\DCFontLarge.xnb" />
+    <None Include="Content\Content\Fonts\DescriptionFont.xnb" />
+    <None Include="Content\Content\Fonts\DescriptionItFont.xnb" />
+    <None Include="Content\Content\Fonts\HeaderFont.xnb" />
+    <None Include="Content\Content\Fonts\NameFont.xnb" />
+    <None Include="Content\Content\Textures\Abilities\AbilityIcons.xnb" />
+    <None Include="Content\Content\Textures\Blank_Sprite.xnb" />
+    <None Include="Content\Content\Textures\Clear_Sprite.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DragonAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DragonDie.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DragonWalk.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DwarfBossAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DwarfBossAttack2.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DwarfBossAttack3.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DwarfBossWalk.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DwarfBossWalk2.xnb" />
+    <None Include="Content\Content\Textures\Enemies\DwarfBossWalk3.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GhostAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GhostDie.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GhostWalk.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GoblinAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GoblinAttackLeader.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GoblinDie.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GoblinDieLeader.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GoblinWalk.xnb" />
+    <None Include="Content\Content\Textures\Enemies\GoblinWalkLeader.xnb" />
+    <None Include="Content\Content\Textures\Enemies\LavaTrollAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\LavaTrollDie.xnb" />
+    <None Include="Content\Content\Textures\Enemies\LavaTrollWalk.xnb" />
+    <None Include="Content\Content\Textures\Enemies\OgreAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\OgreDie.xnb" />
+    <None Include="Content\Content\Textures\Enemies\OgreRun.xnb" />
+    <None Include="Content\Content\Textures\Enemies\SkelArcherAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\SkelArcherDie.xnb" />
+    <None Include="Content\Content\Textures\Enemies\SkelArcherWalk.xnb" />
+    <None Include="Content\Content\Textures\Enemies\SkelKnightAttack.xnb" />
+    <None Include="Content\Content\Textures\Enemies\SkelKnightDie.xnb" />
+    <None Include="Content\Content\Textures\Enemies\SkelKnightWalk.xnb" />
+    <None Include="Content\Content\Textures\greyout.xnb" />
+    <None Include="Content\Content\Textures\Help\ability.xnb" />
+    <None Include="Content\Content\Textures\Help\AttackHelp.xnb" />
+    <None Include="Content\Content\Textures\Help\stats.xnb" />
+    <None Include="Content\Content\Textures\Items\Chests.xnb" />
+    <None Include="Content\Content\Textures\Items\ItemIcons.xnb" />
+    <None Include="Content\Content\Textures\Items\potions.xnb" />
+    <None Include="Content\Content\Textures\Items\TownPortal.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCCommonBlue.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCCommonGray.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCCommonGray2.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCCommonRed.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCCommonYellow.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCMageBlack.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCMageGray.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCMageGreen.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCMageRed.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCMageRed2.xnb" />
+    <None Include="Content\Content\Textures\NPC\NPCMageYellow.xnb" />
+    <None Include="Content\Content\Textures\Particles\explosion.xnb" />
+    <None Include="Content\Content\Textures\Particles\explWhite.xnb" />
+    <None Include="Content\Content\Textures\Particles\glow.xnb" />
+    <None Include="Content\Content\Textures\Particles\smoke.xnb" />
+    <None Include="Content\Content\Textures\Particles\starburst.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\BlankFullBar.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\BlankFullBarHoriz.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\BlankFullBarHorizs.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\celticBoarder.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\celticBoarderLong.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\emptybar.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\emptybarhoriz.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\emptybarhorizs.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\SelectOutline.xnb" />
+    <None Include="Content\Content\Textures\PlayerDisplay\SelectOutlineHighlight.xnb" />
+    <None Include="Content\Content\Textures\Player\commoner_attack_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\commoner_attack_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\commoner_attack_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\commoner_death_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\commoner_walk_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\commoner_walk_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\commoner_walk_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\mage_attack_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\mage_attack_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\mage_attack_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\mage_death_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\mage_walk_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\mage_walk_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\mage_walk_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\rogue_attack_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\rogue_attack_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\rogue_attack_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\rogue_death_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\rogue_walk_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\rogue_walk_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\rogue_walk_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\warrior_attack_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\warrior_attack_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\warrior_attack_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\warrior_death_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Player\warrior_walk_bow.xnb" />
+    <None Include="Content\Content\Textures\Player\warrior_walk_sword.xnb" />
+    <None Include="Content\Content\Textures\Player\warrior_walk_unarmed.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\Arrow.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\Fireball.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\IceBolt.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\LargeFireball.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\LargeIceBolt.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\Lightning.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\PoisonBall.xnb" />
+    <None Include="Content\Content\Textures\Projectiles\Traps.xnb" />
+    <None Include="Content\Content\Textures\Tiles\BrickTiles.xnb" />
+    <None Include="Content\Content\Textures\Tiles\CaveTiles.xnb" />
+    <None Include="Content\Content\Textures\Tiles\CrystalTiles.xnb" />
+    <None Include="Content\Content\Textures\Tiles\Doors.xnb" />
+    <None Include="Content\Content\Textures\Tiles\LavaTiles.xnb" />
+    <None Include="Content\Content\Textures\Tiles\TownTiles.xnb" />
+    <None Include="Content\Content\Textures\UI\ability.xnb" />
+    <None Include="Content\Content\Textures\UI\abilitySelected.xnb" />
+    <None Include="Content\Content\Textures\UI\ArrowRight.xnb" />
+    <None Include="Content\Content\Textures\UI\ArrowUp.xnb" />
+    <None Include="Content\Content\Textures\UI\back.xnb" />
+    <None Include="Content\Content\Textures\UI\backSelect.xnb" />
+    <None Include="Content\Content\Textures\UI\blankSlot.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide32.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide32Select.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide40.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide40Select.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide50.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide50Select.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide55.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide55Select.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide60.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide60Select.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide70.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide70Select.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide75.xnb" />
+    <None Include="Content\Content\Textures\UI\celticSide75Select.xnb" />
+    <None Include="Content\Content\Textures\UI\CornerButton.xnb" />
+    <None Include="Content\Content\Textures\UI\Dead.xnb" />
+    <None Include="Content\Content\Textures\UI\DefaultAd.xnb" />
+    <None Include="Content\Content\Textures\UI\delete.xnb" />
+    <None Include="Content\Content\Textures\UI\deleteSelected.xnb" />
+    <None Include="Content\Content\Textures\UI\dropSlot.xnb" />
+    <None Include="Content\Content\Textures\UI\help.xnb" />
+    <None Include="Content\Content\Textures\UI\helpSelect.xnb" />
+    <None Include="Content\Content\Textures\UI\inUse.xnb" />
+    <None Include="Content\Content\Textures\UI\inventory.xnb" />
+    <None Include="Content\Content\Textures\UI\inventorySelected.xnb" />
+    <None Include="Content\Content\Textures\UI\Portraits.xnb" />
+    <None Include="Content\Content\Textures\UI\quest.xnb" />
+    <None Include="Content\Content\Textures\UI\QuestAvail.xnb" />
+    <None Include="Content\Content\Textures\UI\questSelected.xnb" />
+    <None Include="Content\Content\Textures\UI\Screenshot.xnb" />
+    <None Include="Content\Content\Textures\UI\ScreenshotSelect.xnb" />
+    <None Include="Content\Content\Textures\UI\Settings.xnb" />
+    <None Include="Content\Content\Textures\UI\settingsSelected.xnb" />
+    <None Include="Content\Content\Textures\UI\star.xnb" />
+    <None Include="Content\Content\Textures\UI\stats.xnb" />
+    <None Include="Content\Content\Textures\UI\statsSelected.xnb" />
+    <None Include="Content\Content\Textures\UI\Swap.xnb" />
+    <None Include="Content\Content\Textures\UI\SwapSelected.xnb" />
+    <None Include="Content\Content\Textures\UI\town.xnb" />
+    <None Include="Content\Content\Textures\UI\townSelected.xnb" />
+    <None Include="Content\Content\Textures\UI\trashSlot.xnb" />
+    <None Include="Content\Properties\WMAppManifest.xml" />
+    <None Include="Resources\DirectX-64.bmp" />
+    <None Include="Resources\DotNet-64.bmp" />
+    <None Include="Resources\GreenCheck-16.ico" />
+    <None Include="Resources\GreenCheck-24.ico" />
+    <None Include="Resources\RedX-16.ico" />
+    <None Include="Resources\RedX-24.ico" />
+    <None Include="Resources\Xna-64.bmp" />
+    <None Include="Source\Config.wxi" />
+    <Compile Include="Source\Dialogs\BrowseDialog.wxs" />
+    <Compile Include="Source\Dialogs\CancelDialog.wxs" />
+    <Compile Include="Source\Dialogs\ErrorDialog.wxs" />
+    <Compile Include="Source\Dialogs\ExitDialog.wxs" />
+    <Compile Include="Source\Dialogs\FatalErrorDialog.wxs" />
+    <Compile Include="Source\Dialogs\FilesInUseDialog.wxs" />
+    <Compile Include="Source\Dialogs\PrerequisitesDialog.wxs" />
+    <Compile Include="Source\Dialogs\OutOfDiskSpaceDialog.wxs" />
+    <Compile Include="Source\Dialogs\OutOfRollbackDiskSpaceDialog.wxs" />
+    <Compile Include="Source\Dialogs\ProgressDialog.wxs" />
+    <Compile Include="Source\Dialogs\RequireDotNetDialog.wxs" />
+    <Compile Include="Source\Dialogs\SelectFolderDialog.wxs" />
+    <Compile Include="Source\Dialogs\ShaderWarningDialog.wxs" />
+    <Compile Include="Source\Dialogs\UserExitDialog.wxs" />
+    <Compile Include="Source\Dialogs\VerifyReadyDialog.wxs" />
+    <Compile Include="Source\Dialogs\ViewLicenseAgreementDialog.wxs" />
+    <Compile Include="Source\Dialogs\WelcomeDialog.wxs" />
+    <Compile Include="Source\Dialogs\WrongOperatingSystemDialog.wxs" />
+    <Compile Include="Source\EmbeddedPrerequisites.wxs" />
+    <Compile Include="Source\Files.wxs" />
+    <Compile Include="Source\NuclexSetupDetector.wxs" />
+    <Compile Include="Source\Setup.wxs" />
+    <Compile Include="Source\UserInterface.wxs" />
+    <None Include="Documents\license.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content" />
+    <Folder Include="Content\Content" />
+    <Folder Include="Content\Content\Audio" />
+    <Folder Include="Content\Content\Data" />
+    <Folder Include="Content\Content\Fonts" />
+    <Folder Include="Content\Content\Textures" />
+    <Folder Include="Content\Content\Textures\Abilities" />
+    <Folder Include="Content\Content\Textures\Enemies" />
+    <Folder Include="Content\Content\Textures\Help" />
+    <Folder Include="Content\Content\Textures\Items" />
+    <Folder Include="Content\Content\Textures\NPC" />
+    <Folder Include="Content\Content\Textures\Particles" />
+    <Folder Include="Content\Content\Textures\Player" />
+    <Folder Include="Content\Content\Textures\PlayerDisplay" />
+    <Folder Include="Content\Content\Textures\Projectiles" />
+    <Folder Include="Content\Content\Textures\Tiles" />
+    <Folder Include="Content\Content\Textures\UI" />
+    <Folder Include="Content\Properties" />
+    <Folder Include="Documents" />
+    <Folder Include="Resources" />
+    <Folder Include="Source" />
+    <Folder Include="Source\Dialogs" />
+  </ItemGroup>
+</Project>

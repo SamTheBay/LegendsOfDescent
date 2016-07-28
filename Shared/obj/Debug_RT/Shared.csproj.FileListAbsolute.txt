@@ -1,0 +1,8 @@
+E:\BitBucket\Legends\dungeongame\Shared\bin\Debug_RT\LegendsOfDescent.Shared.dll
+E:\BitBucket\Legends\dungeongame\Shared\bin\Debug_RT\LegendsOfDescent.Shared.pdb
+E:\BitBucket\Legends\dungeongame\Shared\bin\Debug_RT\protobuf-net.dll
+E:\BitBucket\Legends\dungeongame\Shared\bin\Debug_RT\protobuf-net.pdb
+E:\BitBucket\Legends\dungeongame\Shared\bin\Debug_RT\protobuf-net.xml
+E:\BitBucket\Legends\dungeongame\Shared\obj\Debug_RT\Shared.csprojResolveAssemblyReference.cache
+E:\BitBucket\Legends\dungeongame\Shared\obj\Debug_RT\LegendsOfDescent.Shared.dll
+E:\BitBucket\Legends\dungeongame\Shared\obj\Debug_RT\LegendsOfDescent.Shared.pdb

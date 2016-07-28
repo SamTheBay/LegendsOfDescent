@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFE122AD-6C2C-4539-A48C-CAD098062D7F}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LegendsOfDescentW8</RootNamespace>
+    <AssemblyName>LegendsOfDescentW8</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>LegendsOfDescentW8_StoreKey.pfx</PackageCertificateKeyFile>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>46982874C35BBCBB8A8CF839C5E52606E3F0CEAA</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE WIN8 MONOGAME</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE WIN8</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8 </DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;WIN8</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Abilities\Ability.cs" />
+    <Compile Include="Abilities\BlizzardAbility.cs" />
+    <Compile Include="Abilities\BowAbility.cs" />
+    <Compile Include="Abilities\ChainLightningAbility.cs" />
+    <Compile Include="Abilities\CleaveAbility.cs" />
+    <Compile Include="Abilities\DefenceAbility.cs" />
+    <Compile Include="Abilities\EarthquakeAbility.cs" />
+    <Compile Include="Abilities\EpicStrikeAbility.cs" />
+    <Compile Include="Abilities\ExplosionTrapAbility.cs" />
+    <Compile Include="Abilities\FearAbility.cs" />
+    <Compile Include="Abilities\FireBallAbility.cs" />
+    <Compile Include="Abilities\FireBoltAbility.cs" />
+    <Compile Include="Abilities\FrenzyAbility.cs" />
+    <Compile Include="Abilities\FrostArmorAbility.cs" />
+    <Compile Include="Abilities\FrozenGroundAbility.cs" />
+    <Compile Include="Abilities\HealAbility.cs" />
+    <Compile Include="Abilities\IceBoltAbility.cs" />
+    <Compile Include="Abilities\InvisibilityAbility.cs" />
+    <Compile Include="Abilities\LightningAbility.cs" />
+    <Compile Include="Abilities\MagicArrowAbility.cs" />
+    <Compile Include="Abilities\MeleeAbility.cs" />
+    <Compile Include="Abilities\MoltenEarthAbility.cs" />
+    <Compile Include="Abilities\MultiShotAbility.cs" />
+    <Compile Include="Abilities\NovaAbility.cs" />
+    <Compile Include="Abilities\PoisonCloudAbility.cs" />
+    <Compile Include="Abilities\PoisonMasteryAbility.cs" />
+    <Compile Include="Abilities\PoisonTrapAbility.cs" />
+    <Compile Include="Abilities\PrecisionAbility.cs" />
+    <Compile Include="Abilities\ShadowMasteryAbility.cs" />
+    <Compile Include="Abilities\SlowTimeAbility.cs" />
+    <Compile Include="Abilities\SprintAbility.cs" />
+    <Compile Include="Abilities\StoneSkinAbility.cs" />
+    <Compile Include="Accelerometer.cs" />
+    <Compile Include="AdControlManager.cs" />
+    <Compile Include="Analytics\Analytics.cs" />
+    <Compile Include="Analytics\Analytics.Win8.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="BalanceManager.cs" />
+    <Compile Include="Classes\PlayerClass.cs" />
+    <Compile Include="Classes\PlayerClassManager.cs" />
+    <Compile Include="ContentManager.cs" />
+    <Compile Include="Enemies\Drake.cs" />
+    <Compile Include="Enemies\DwarfBoss.cs" />
+    <Compile Include="Enemies\Ghost.cs" />
+    <Compile Include="Enemies\Goblin.cs" />
+    <Compile Include="Enemies\LavaTroll.cs" />
+    <Compile Include="Enemies\Ogre.cs" />
+    <Compile Include="Enemies\SkeletonArcher.cs" />
+    <Compile Include="Enemies\SkeletonKnight.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\MathExtensions.cs" />
+    <Compile Include="Extensions\MiscExtensions.cs" />
+    <Compile Include="Extensions\PersistorExtensions.cs" />
+    <Compile Include="Extensions\RandomExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Fonts.cs" />
+    <Compile Include="DungeonGame.xaml.cs">
+      <DependentUpon>DungeonGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameScreens\AbilitiesScreen.cs" />
+    <Compile Include="GameScreens\BlacksmithScreen.cs" />
+    <Compile Include="GameScreens\ClassUpgradeScreen.cs" />
+    <Compile Include="GameScreens\ContinueQuestion.cs" />
+    <Compile Include="GameScreens\CreditsScreen.cs" />
+    <Compile Include="GameScreens\DescriptionScreen.cs" />
+    <Compile Include="GameScreens\DialogueScreen.cs" />
+    <Compile Include="GameScreens\DifficultyScreen.cs" />
+    <Compile Include="GameScreens\EnchanterScreen.cs" />
+    <Compile Include="GameScreens\FeedBackScreen.cs" />
+    <Compile Include="GameScreens\GameplayScreen.cs" />
+    <Compile Include="GameScreens\HelpScreen.cs" />
+    <Compile Include="GameScreens\InitialLoadScreen.cs" />
+    <Compile Include="GameScreens\IntroScreen.cs" />
+    <Compile Include="GameScreens\InventoryScreen.cs" />
+    <Compile Include="GameScreens\LoadGameScreen.cs" />
+    <Compile Include="GameScreens\MerchantScreen.cs" />
+    <Compile Include="GameScreens\MessagePopup.cs" />
+    <Compile Include="GameScreens\NewGameScreen.cs" />
+    <Compile Include="GameScreens\OptionScreen.cs" />
+    <Compile Include="GameScreens\PauseScreen.cs" />
+    <Compile Include="GameScreens\QuestCompleteScreen.cs" />
+    <Compile Include="GameScreens\QuestScreen.cs" />
+    <Compile Include="GameScreens\ResolutionSelectScreen.cs" />
+    <Compile Include="GameScreens\ResumePauseScreen.cs" />
+    <Compile Include="GameScreens\ReviewScreen.cs" />
+    <Compile Include="GameScreens\SnapScreen.cs" />
+    <Compile Include="GameScreens\StairsScreen.cs" />
+    <Compile Include="GameScreens\StashScreen.cs" />
+    <Compile Include="GameScreens\StashUnlockScreen.cs" />
+    <Compile Include="GameScreens\StatsScreen.cs" />
+    <Compile Include="GameScreens\TeleportScreen.cs" />
+    <Compile Include="GameScreens\TextInputScreen.cs" />
+    <Compile Include="GameScreens\UnstuckScreen.cs" />
+    <Compile Include="GameScreens\UpdateNotesScreen.cs" />
+    <Compile Include="GameScreens\WarpScreen.cs" />
+    <Compile Include="HelpButton.cs" />
+    <Compile Include="HelpScreenManager.cs" />
+    <Compile Include="HitDetect.cs" />
+    <Compile Include="InputManager.cs" />
+    <Compile Include="Items\Chest.cs" />
+    <Compile Include="Items\EquipableItem.cs" />
+    <Compile Include="Items\GoldItem.cs" />
+    <Compile Include="Items\ItemManager.cs" />
+    <Compile Include="Items\Stairs.cs" />
+    <Compile Include="Items\TownPortal.cs" />
+    <Compile Include="Items\UsableItem.cs" />
+    <Compile Include="Joystick.cs" />
+    <Compile Include="KeyEqualityComparer.cs" />
+    <Compile Include="MacroButton.cs" />
+    <Compile Include="Map\DungeonLevel.cs" />
+    <Compile Include="Map\IMap.cs" />
+    <Compile Include="Map\LevelConfig.cs" />
+    <Compile Include="Map\LevelOrchestrator.cs" />
+    <Compile Include="Map\MapGenerator.cs" />
+    <Compile Include="NameGenerator.cs" />
+    <Compile Include="NPCs\BlacksmithSprite.cs" />
+    <Compile Include="NPCs\EnchanterSprite.cs" />
+    <Compile Include="NPCs\FriendKnight.cs" />
+    <Compile Include="NPCs\MerchantSprite.cs" />
+    <Compile Include="NPCs\QuesterSprite.cs" />
+    <Compile Include="NPCs\ResetSprite.cs" />
+    <Compile Include="NPCs\TeleporterSprite.cs" />
+    <Compile Include="Particles\Particle.cs" />
+    <Compile Include="Particles\ParticleParams.cs" />
+    <Compile Include="Particles\ParticleSystem.cs" />
+    <Compile Include="PathFinding\PriorityQueue.cs" />
+    <Compile Include="PathFinding\SpatialAStar.cs" />
+    <Compile Include="ProductsManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quests\EnemyKillsQuest.cs" />
+    <Compile Include="Quests\FindItemQuest.cs" />
+    <Compile Include="Quests\FindNpcQuest.cs" />
+    <Compile Include="Quests\KillChampionQuest.cs" />
+    <Compile Include="Quests\KillInvadersQuest.cs" />
+    <Compile Include="Quests\Quest.cs" />
+    <Compile Include="Quests\QuestLog.cs" />
+    <Compile Include="Quests\QuestParams.cs" />
+    <Compile Include="Quests\Reward.cs" />
+    <Compile Include="SaveGameManager.cs" />
+    <Compile Include="ScreenManager\GameScreen.cs" />
+    <Compile Include="ScreenManager\MenuEntry.cs" />
+    <Compile Include="ScreenManager\MenuScreen.cs" />
+    <Compile Include="ScreenManager\PopUpScreen.cs" />
+    <Compile Include="ScreenManager\ScreenManager.cs" />
+    <Compile Include="ScreenShot.cs" />
+    <Compile Include="SpriteManager\AnimatedSprite.cs" />
+    <Compile Include="SpriteManager\Animation.cs" />
+    <Compile Include="SpriteManager\CharacterSprite.cs" />
+    <Compile Include="SpriteManager\DialogueNPCSprite.cs" />
+    <Compile Include="SpriteManager\EnemySprite.cs" />
+    <Compile Include="SpriteManager\EnvItemSprite.cs" />
+    <Compile Include="SpriteManager\GameSprite.cs" />
+    <Compile Include="SpriteManager\ItemSprite.cs" />
+    <Compile Include="SpriteManager\NPCSprite.cs" />
+    <Compile Include="SpriteManager\PlayerSprite.cs" />
+    <Compile Include="SpriteManager\TextSprite.cs" />
+    <Compile Include="SpriteManager\TileSet.cs" />
+    <Compile Include="SpriteManager\TileSprite.cs" />
+    <Compile Include="SpriteManager\WeaponSprite.cs" />
+    <Compile Include="StatsManager.cs" />
+    <Compile Include="Storage.cs" />
+    <Compile Include="TextureModifier.cs" />
+    <Compile Include="TimedEffect.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Weapons\Arrow.cs" />
+    <Compile Include="Weapons\ChainLightning.cs" />
+    <Compile Include="Weapons\ExplosionTrap.cs" />
+    <Compile Include="Weapons\Fireball.cs" />
+    <Compile Include="Weapons\Firebolt.cs" />
+    <Compile Include="Weapons\IceBolt.cs" />
+    <Compile Include="Weapons\Lightning.cs" />
+    <Compile Include="Weapons\PoisonBolt.cs" />
+    <Compile Include="Weapons\PoisonTrap.cs" />
+    <Compile Include="WindowsTouchCollection.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="XNAExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="Assets\Audio\Body_Hit_08.xnb" />
+    <Content Include="Assets\Audio\Body_Hit_10.xnb" />
+    <Content Include="Assets\Audio\Body_Hit_11.xnb" />
+    <Content Include="Assets\Audio\Body_Hit_43.xnb" />
+    <Content Include="Assets\Audio\Boom.xnb" />
+    <Content Include="Assets\Audio\BowShoot.xnb" />
+    <Content Include="Assets\Audio\BoxOpen1.xnb" />
+    <Content Include="Assets\Audio\BoxOpen2.xnb" />
+    <Content Include="Assets\Audio\BoxOpen3.xnb" />
+    <Content Include="Assets\Audio\Chain1.xnb" />
+    <Content Include="Assets\Audio\Chain2.xnb" />
+    <Content Include="Assets\Audio\Chain3.xnb" />
+    <Content Include="Assets\Audio\DoorClose1.xnb" />
+    <Content Include="Assets\Audio\DoorClose2.xnb" />
+    <Content Include="Assets\Audio\DoorClose3.xnb" />
+    <Content Include="Assets\Audio\DoorClose4.xnb" />
+    <Content Include="Assets\Audio\DoorOpen1.xnb" />
+    <Content Include="Assets\Audio\DoorOpen2.xnb" />
+    <Content Include="Assets\Audio\DoorOpen3.xnb" />
+    <Content Include="Assets\Audio\Drop.xnb" />
+    <Content Include="Assets\Audio\Element1.xnb" />
+    <Content Include="Assets\Audio\Element2.xnb" />
+    <Content Include="Assets\Audio\Element3.xnb" />
+    <Content Include="Assets\Audio\Element4.xnb" />
+    <Content Include="Assets\Audio\Fear1.xnb" />
+    <Content Include="Assets\Audio\Fear2.xnb" />
+    <Content Include="Assets\Audio\Fear3.xnb" />
+    <Content Include="Assets\Audio\Fear4.xnb" />
+    <Content Include="Assets\Audio\Fear5.xnb" />
+    <Content Include="Assets\Audio\Fire1.xnb" />
+    <Content Include="Assets\Audio\Fire2.xnb" />
+    <Content Include="Assets\Audio\Fire3.xnb" />
+    <Content Include="Assets\Audio\Frozen1.xnb" />
+    <Content Include="Assets\Audio\Frozen2.xnb" />
+    <Content Include="Assets\Audio\Frozen3.xnb" />
+    <Content Include="Assets\Audio\Ghost1.xnb" />
+    <Content Include="Assets\Audio\Ghost2.xnb" />
+    <Content Include="Assets\Audio\Ghost3.xnb" />
+    <Content Include="Assets\Audio\Ghost4.xnb" />
+    <Content Include="Assets\Audio\Ghost5.xnb" />
+    <Content Include="Assets\Audio\Gold1.xnb" />
+    <Content Include="Assets\Audio\Gold2.xnb" />
+    <Content Include="Assets\Audio\Gold3.xnb" />
+    <Content Include="Assets\Audio\HeavyDrop1.xnb" />
+    <Content Include="Assets\Audio\HeavyDrop2.xnb" />
+    <Content Include="Assets\Audio\HeavyDrop3.xnb" />
+    <Content Include="Assets\Audio\Invis1.xnb" />
+    <Content Include="Assets\Audio\Invis2.xnb" />
+    <Content Include="Assets\Audio\Invis3.xnb" />
+    <Content Include="Assets\Audio\Invis4.xnb" />
+    <Content Include="Assets\Audio\Invis5.xnb" />
+    <Content Include="Assets\Audio\Magic1.xnb" />
+    <Content Include="Assets\Audio\Magic2.xnb" />
+    <Content Include="Assets\Audio\Magic3.xnb" />
+    <Content Include="Assets\Audio\Magic4.xnb" />
+    <Content Include="Assets\Audio\Magic5.xnb" />
+    <Content Include="Assets\Audio\MainMusic.xnb" />
+    <Content Include="Assets\Audio\MainMusic2.xnb" />
+    <Content Include="Assets\Audio\MainMusic3.xnb" />
+    <Content Include="Assets\Audio\menu_select.xnb" />
+    <Content Include="Assets\Audio\MetalDrop.xnb" />
+    <Content Include="Assets\Audio\Ork1.xnb" />
+    <Content Include="Assets\Audio\Ork2.xnb" />
+    <Content Include="Assets\Audio\Ork3.xnb" />
+    <Content Include="Assets\Audio\Poison1.xnb" />
+    <Content Include="Assets\Audio\Poison2.xnb" />
+    <Content Include="Assets\Audio\Poison3.xnb" />
+    <Content Include="Assets\Audio\Potion1.xnb" />
+    <Content Include="Assets\Audio\Potion2.xnb" />
+    <Content Include="Assets\Audio\Potion3.xnb" />
+    <Content Include="Assets\Audio\Shout1.xnb" />
+    <Content Include="Assets\Audio\Shout2.xnb" />
+    <Content Include="Assets\Audio\Shout3.xnb" />
+    <Content Include="Assets\Audio\Skel1.xnb" />
+    <Content Include="Assets\Audio\Skel2.xnb" />
+    <Content Include="Assets\Audio\Skel3.xnb" />
+    <Content Include="Assets\Audio\Skel4.xnb" />
+    <Content Include="Assets\Audio\Slow1.xnb" />
+    <Content Include="Assets\Audio\Slow2.xnb" />
+    <Content Include="Assets\Audio\Slow3.xnb" />
+    <Content Include="Assets\Audio\SmallExplosion1.xnb" />
+    <Content Include="Assets\Audio\SmallExplosion2.xnb" />
+    <Content Include="Assets\Audio\SmallExplosion3.xnb" />
+    <Content Include="Assets\Audio\Spark.xnb" />
+    <Content Include="Assets\Audio\SpeedUp1.xnb" />
+    <Content Include="Assets\Audio\SpeedUp2.xnb" />
+    <Content Include="Assets\Audio\SpeedUp3.xnb" />
+    <Content Include="Assets\Audio\StairsDown.xnb" />
+    <Content Include="Assets\Audio\StairsUp.xnb" />
+    <Content Include="Assets\Audio\Stomp1.xnb" />
+    <Content Include="Assets\Audio\Stomp2.xnb" />
+    <Content Include="Assets\Audio\Stomp3.xnb" />
+    <Content Include="Assets\Audio\Stomp4.xnb" />
+    <Content Include="Assets\Audio\Stone1.xnb" />
+    <Content Include="Assets\Audio\Stone2.xnb" />
+    <Content Include="Assets\Audio\Stone3.xnb" />
+    <Content Include="Assets\Audio\Stone4.xnb" />
+    <Content Include="Assets\Audio\Swing1.xnb" />
+    <Content Include="Assets\Audio\Swing2.xnb" />
+    <Content Include="Assets\Audio\Sword1.xnb" />
+    <Content Include="Assets\Audio\Sword2.xnb" />
+    <Content Include="Assets\Audio\Sword3.xnb" />
+    <Content Include="Assets\Audio\Sword4.xnb" />
+    <Content Include="Assets\Audio\Sword5.xnb" />
+    <Content Include="Assets\Audio\Sword6.xnb" />
+    <Content Include="Assets\Audio\TownPort.xnb" />
+    <Content Include="Assets\Audio\TrapSet1.xnb" />
+    <Content Include="Assets\Audio\TrapSet2.xnb" />
+    <Content Include="Assets\Audio\TrapSet3.xnb" />
+    <Content Include="Assets\Audio\TrapSet4.xnb" />
+    <Content Include="Assets\Audio\TrapSet5.xnb" />
+    <Content Include="Assets\Audio\TrapSpring1.xnb" />
+    <Content Include="Assets\Audio\TrapSpring2.xnb" />
+    <Content Include="Assets\Audio\TrapSpring3.xnb" />
+    <Content Include="Assets\Audio\TrapSpring4.xnb" />
+    <Content Include="Assets\Audio\TrapSpring5.xnb" />
+    <Content Include="Assets\Audio\Trumpet.xnb" />
+    <Content Include="Assets\Data\WindowsStoreProxy.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Assets\Fonts\ButtonFont.xnb" />
+    <Content Include="Assets\Fonts\CritFont.xnb" />
+    <Content Include="Assets\Fonts\DCFont.xnb" />
+    <Content Include="Assets\Fonts\DCFontLarge.xnb" />
+    <Content Include="Assets\Fonts\DescriptionFont.xnb" />
+    <Content Include="Assets\Fonts\DescriptionItFont.xnb" />
+    <Content Include="Assets\Fonts\HeaderFont.xnb" />
+    <Content Include="Assets\Fonts\NameFont.xnb" />
+    <Content Include="Assets\Textures\Abilities\AbilityIcons.xnb" />
+    <Content Include="Assets\Textures\Blank_Sprite.xnb" />
+    <Content Include="Assets\Textures\Clear_Sprite.xnb" />
+    <Content Include="Assets\Textures\Enemies\DragonAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\DragonDie.xnb" />
+    <Content Include="Assets\Textures\Enemies\DragonWalk.xnb" />
+    <Content Include="Assets\Textures\Enemies\DwarfBossAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\DwarfBossAttack2.xnb" />
+    <Content Include="Assets\Textures\Enemies\DwarfBossAttack3.xnb" />
+    <Content Include="Assets\Textures\Enemies\DwarfBossWalk.xnb" />
+    <Content Include="Assets\Textures\Enemies\DwarfBossWalk2.xnb" />
+    <Content Include="Assets\Textures\Enemies\DwarfBossWalk3.xnb" />
+    <Content Include="Assets\Textures\Enemies\GhostAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\GhostDie.xnb" />
+    <Content Include="Assets\Textures\Enemies\GhostWalk.xnb" />
+    <Content Include="Assets\Textures\Enemies\GoblinAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\GoblinAttackLeader.xnb" />
+    <Content Include="Assets\Textures\Enemies\GoblinDie.xnb" />
+    <Content Include="Assets\Textures\Enemies\GoblinDieLeader.xnb" />
+    <Content Include="Assets\Textures\Enemies\GoblinWalk.xnb" />
+    <Content Include="Assets\Textures\Enemies\GoblinWalkLeader.xnb" />
+    <Content Include="Assets\Textures\Enemies\LavaTrollAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\LavaTrollDie.xnb" />
+    <Content Include="Assets\Textures\Enemies\LavaTrollWalk.xnb" />
+    <Content Include="Assets\Textures\Enemies\OgreAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\OgreDie.xnb" />
+    <Content Include="Assets\Textures\Enemies\OgreRun.xnb" />
+    <Content Include="Assets\Textures\Enemies\SkelArcherAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\SkelArcherDie.xnb" />
+    <Content Include="Assets\Textures\Enemies\SkelArcherWalk.xnb" />
+    <Content Include="Assets\Textures\Enemies\SkelKnightAttack.xnb" />
+    <Content Include="Assets\Textures\Enemies\SkelKnightDie.xnb" />
+    <Content Include="Assets\Textures\Enemies\SkelKnightWalk.xnb" />
+    <Content Include="Assets\Textures\greyout.xnb" />
+    <Content Include="Assets\Textures\Help\ability.xnb" />
+    <Content Include="Assets\Textures\Help\AttackHelp.xnb" />
+    <Content Include="Assets\Textures\Help\stats.xnb" />
+    <Content Include="Assets\Textures\Items\Chests.xnb" />
+    <Content Include="Assets\Textures\Items\ItemIcons.xnb" />
+    <Content Include="Assets\Textures\Items\potions.xnb" />
+    <Content Include="Assets\Textures\Items\TownPortal.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCCommonBlue.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCCommonGray.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCCommonGray2.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCCommonRed.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCCommonYellow.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCMageBlack.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCMageGray.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCMageGreen.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCMageRed.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCMageRed2.xnb" />
+    <Content Include="Assets\Textures\NPC\NPCMageYellow.xnb" />
+    <Content Include="Assets\Textures\Particles\explosion.xnb" />
+    <Content Include="Assets\Textures\Particles\explWhite.xnb" />
+    <Content Include="Assets\Textures\Particles\glow.xnb" />
+    <Content Include="Assets\Textures\Particles\smoke.xnb" />
+    <Content Include="Assets\Textures\Particles\starburst.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\BlankFullBar.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\BlankFullBarHoriz.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\BlankFullBarHorizs.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\celticBoarder.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\celticBoarderLong.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\emptybar.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\emptybarhoriz.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\emptybarhorizs.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\SelectOutline.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\SelectOutlineHighlight.xnb" />
+    <Content Include="Assets\Textures\Player\commoner_attack_bow.xnb" />
+    <Content Include="Assets\Textures\Player\commoner_attack_sword.xnb" />
+    <Content Include="Assets\Textures\Player\commoner_attack_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\commoner_death_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\commoner_walk_bow.xnb" />
+    <Content Include="Assets\Textures\Player\commoner_walk_sword.xnb" />
+    <Content Include="Assets\Textures\Player\commoner_walk_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\mage_attack_bow.xnb" />
+    <Content Include="Assets\Textures\Player\mage_attack_sword.xnb" />
+    <Content Include="Assets\Textures\Player\mage_attack_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\mage_death_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\mage_walk_bow.xnb" />
+    <Content Include="Assets\Textures\Player\mage_walk_sword.xnb" />
+    <Content Include="Assets\Textures\Player\mage_walk_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\rogue_attack_bow.xnb" />
+    <Content Include="Assets\Textures\Player\rogue_attack_sword.xnb" />
+    <Content Include="Assets\Textures\Player\rogue_attack_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\rogue_death_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\rogue_walk_bow.xnb" />
+    <Content Include="Assets\Textures\Player\rogue_walk_sword.xnb" />
+    <Content Include="Assets\Textures\Player\rogue_walk_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\warrior_attack_bow.xnb" />
+    <Content Include="Assets\Textures\Player\warrior_attack_sword.xnb" />
+    <Content Include="Assets\Textures\Player\warrior_attack_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\warrior_death_unarmed.xnb" />
+    <Content Include="Assets\Textures\Player\warrior_walk_bow.xnb" />
+    <Content Include="Assets\Textures\Player\warrior_walk_sword.xnb" />
+    <Content Include="Assets\Textures\Player\warrior_walk_unarmed.xnb" />
+    <Content Include="Assets\Textures\Projectiles\Arrow.xnb" />
+    <Content Include="Assets\Textures\Projectiles\Fireball.xnb" />
+    <Content Include="Assets\Textures\Projectiles\IceBolt.xnb" />
+    <Content Include="Assets\Textures\Projectiles\LargeFireball.xnb" />
+    <Content Include="Assets\Textures\Projectiles\LargeIceBolt.xnb" />
+    <Content Include="Assets\Textures\Projectiles\Lightning.xnb" />
+    <Content Include="Assets\Textures\Projectiles\PoisonBall.xnb" />
+    <Content Include="Assets\Textures\Projectiles\Traps.xnb" />
+    <Content Include="Assets\Textures\Tiles\BrickTiles.xnb" />
+    <Content Include="Assets\Textures\Tiles\CaveTiles.xnb" />
+    <Content Include="Assets\Textures\Tiles\CrystalTiles.xnb" />
+    <Content Include="Assets\Textures\Tiles\Doors.xnb" />
+    <Content Include="Assets\Textures\Tiles\LavaTiles.xnb" />
+    <Content Include="Assets\Textures\Tiles\TownTiles.xnb" />
+    <Content Include="Assets\Textures\UI\ability.xnb" />
+    <Content Include="Assets\Textures\UI\abilitySelected.xnb" />
+    <Content Include="Assets\Textures\UI\ArrowRight.xnb" />
+    <Content Include="Assets\Textures\UI\ArrowUp.xnb" />
+    <Content Include="Assets\Textures\UI\back.xnb" />
+    <Content Include="Assets\Textures\UI\backSelect.xnb" />
+    <Content Include="Assets\Textures\UI\blankSlot.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide32.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide32Select.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide40.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide40Select.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide50.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide50Select.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide55.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide55Select.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide60.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide60Select.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide70.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide70Select.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide75.xnb" />
+    <Content Include="Assets\Textures\UI\celticSide75Select.xnb" />
+    <Content Include="Assets\Textures\UI\CornerButton.xnb" />
+    <Content Include="Assets\Textures\UI\Dead.xnb" />
+    <Content Include="Assets\Textures\UI\DefaultAd.xnb" />
+    <Content Include="Assets\Textures\UI\delete.xnb" />
+    <Content Include="Assets\Textures\UI\deleteSelected.xnb" />
+    <Content Include="Assets\Textures\UI\dropSlot.xnb" />
+    <Content Include="Assets\Textures\UI\help.xnb" />
+    <Content Include="Assets\Textures\UI\helpSelect.xnb" />
+    <Content Include="Assets\Textures\UI\inUse.xnb" />
+    <Content Include="Assets\Textures\UI\inventory.xnb" />
+    <Content Include="Assets\Textures\UI\inventorySelected.xnb" />
+    <Content Include="Assets\Textures\UI\LoDTitle.xnb" />
+    <Content Include="Assets\Textures\UI\Portraits.xnb" />
+    <Content Include="Assets\Textures\UI\quest.xnb" />
+    <Content Include="Assets\Textures\UI\QuestAvail.xnb" />
+    <Content Include="Assets\Textures\UI\questSelected.xnb" />
+    <Content Include="Assets\Textures\UI\Screenshot.xnb" />
+    <Content Include="Assets\Textures\UI\ScreenshotSelect.xnb" />
+    <Content Include="Assets\Textures\UI\Settings.xnb" />
+    <Content Include="Assets\Textures\UI\settingsSelected.xnb" />
+    <Content Include="Assets\Textures\UI\star.xnb" />
+    <Content Include="Assets\Textures\UI\stats.xnb" />
+    <Content Include="Assets\Textures\UI\statsSelected.xnb" />
+    <Content Include="Assets\Textures\UI\Swap.xnb" />
+    <Content Include="Assets\Textures\UI\SwapSelected.xnb" />
+    <Content Include="Assets\Textures\UI\town.xnb" />
+    <Content Include="Assets\Textures\UI\townSelected.xnb" />
+    <Content Include="Assets\Textures\UI\trashSlot.xnb" />
+    <Content Include="Assets\WideLogo.png" />
+    <Content Include="Assets\Textures\PlayerDisplay\BlankFullBar260.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\celticBoarder260.xnb" />
+    <Content Include="Assets\Textures\PlayerDisplay\emptybar260.xnb" />
+    <Content Include="Assets\Textures\UI\Logo.xnb" />
+    <Content Include="Assets\Textures\UI\menu.xnb" />
+    <Content Include="Assets\Textures\UI\menuSelect.xnb" />
+    <Content Include="Assets\Textures\UI\check.xnb" />
+    <Content Include="Assets\Textures\UI\checkSelected.xnb" />
+    <Content Include="Assets\Textures\UI\JoystickCircle.xnb" />
+    <Content Include="Assets\Textures\UI\JoystickDot.xnb" />
+    <Content Include="Assets\Textures\UI\ActionButton.xnb" />
+    <Content Include="Assets\Textures\UI\ActionButtonPress.xnb" />
+    <Content Include="Assets\Textures\UI\names.xnb" />
+    <Content Include="Assets\Textures\UI\namesSelect.xnb" />
+    <Content Include="Assets\Textures\Help\help.xnb" />
+    <Content Include="Assets\Textures\Help\JoystickAttackHelp.xnb" />
+    <Content Include="Assets\Textures\Help\JoystickMoveHelp.xnb" />
+    <Content Include="Assets\Textures\UI\DefaultAd_292_60.xnb" />
+    <Content Include="Assets\Textures\UI\DefaultAd_728_90.xnb" />
+    <None Include="Package.StoreAssociation.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LegendsOfDescentW8_StoreKey.pfx" />
+    <None Include="LegendsOfDescentW8_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Audio\MainMusic.wma" />
+    <Content Include="Assets\Audio\MainMusic2.wma" />
+    <Content Include="Assets\Audio\MainMusic3.wma" />
+    <Content Include="Assets\Data\Items.xml" />
+    <Content Include="Assets\Data\LegendaryItems.xml" />
+    <Content Include="Assets\Data\Levels.xml" />
+    <Content Include="Assets\Data\MagicProperties.xml" />
+    <Content Include="Assets\Data\Quests.xml" />
+    <Content Include="Assets\Data\townMap.xml" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\SmallLogo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\StoreLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AdDuplex.Windows, Version=8.0.2.0, Culture=neutral, PublicKeyToken=447cab5ae9276daf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\AdDuplexWindows.8.0.2.0\lib\winrt45\AdDuplex.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\external\MonoGame\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.602, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\external\protobuf-net\portable\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\external\SharpDX\Win8Metro\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1">
+      <HintPath>..\..\external\SharpDX\Win8Metro\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>..\..\external\SharpDX\Win8Metro\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\..\external\SharpDX\Win8Metro\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation">
+      <HintPath>..\..\external\SharpDX\Win8Metro\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2">
+      <HintPath>..\..\external\SharpDX\Win8Metro\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput">
+      <HintPath>..\..\external\SharpDX\Win8Metro\SharpDX.XInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DungeonGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="MSAdvertisingXaml, Version=6.1">
+      <Name>Microsoft Advertising SDK for Windows 8 %28Xaml%29</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Shared.csproj">
+      <Project>{f8fd2dbf-aee1-4b34-89ae-a7bd815ff2e5}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_Arm|AnyCPU'">
+    <OutputPath>bin\Release_Arm\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_Arm|ARM'">
+    <OutputPath>bin\ARM\Release_Arm\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_Arm|x64'">
+    <OutputPath>bin\x64\Release_Arm\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_Arm|x86'">
+    <OutputPath>bin\x86\Release_Arm\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_RT|AnyCPU'">
+    <OutputPath>bin\Release_RT\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8 WINRT</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_RT|ARM'">
+    <OutputPath>bin\ARM\Release_RT\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8 WINRT</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_RT|x64'">
+    <OutputPath>bin\x64\Release_RT\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8 WINRT</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_RT|x86'">
+    <OutputPath>bin\x86\Release_RT\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE WIN8 WINRT</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_RT|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_RT\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE WIN8 MONOGAME WINRT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_RT|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug_RT\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE WIN8 WINRT</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_RT|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug_RT\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE WINRT</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_RT|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug_RT\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;WIN8 WINRT</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{15E2A54C-9A56-4139-A4F1-C3D4E53F75FD}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LegendsOfDescent</RootNamespace>
+    <AssemblyName>LegendsOfDescent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>5443f8ef-e652-493f-8118-880466ca8745</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>TileArt.png</TileImage>
+    <TileTitle>LoD</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_Paid|Windows Phone'">
+    <OutputPath>bin\Windows Phone\Release_Paid\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE;PAID</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Windows Phone\Release\LegendsOfDescent.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_Paid|Windows Phone'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Windows Phone\Debug_Paid\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS_PHONE;PAID</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Windows Phone\Debug\LegendsOfDescent.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_RT|Windows Phone'">
+    <OutputPath>bin\Windows Phone\Release_RT\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_RT|Windows Phone'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Windows Phone\Debug_RT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdDuplex.Xna">
+      <HintPath>..\..\external\AdDuplexSDK\AdDuplex.Xna.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile.Xna">
+      <HintPath>..\..\external\Microsoft Advertising SDK\Microsoft.Advertising.Mobile.Xna.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Devices.Sensors, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\external\protobuf-net\sl3-wp\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Servicemodel.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="WP7XNASDK">
+      <HintPath>..\..\external\MillennialAdSDK\WP7XNASDK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abilities\Ability.cs" />
+    <Compile Include="Abilities\BlizzardAbility.cs" />
+    <Compile Include="Abilities\BowAbility.cs" />
+    <Compile Include="Abilities\ChainLightningAbility.cs" />
+    <Compile Include="Abilities\CleaveAbility.cs" />
+    <Compile Include="Abilities\EarthquakeAbility.cs" />
+    <Compile Include="Abilities\EpicStrikeAbility.cs" />
+    <Compile Include="Abilities\ExplosionTrapAbility.cs" />
+    <Compile Include="Abilities\FearAbility.cs" />
+    <Compile Include="Abilities\FrenzyAbility.cs" />
+    <Compile Include="Abilities\FrostArmorAbility.cs" />
+    <Compile Include="Abilities\FrozenGroundAbility.cs" />
+    <Compile Include="Abilities\InvisibilityAbility.cs" />
+    <Compile Include="Abilities\LightningAbility.cs" />
+    <Compile Include="Abilities\DefenceAbility.cs" />
+    <Compile Include="Abilities\FireBoltAbility.cs" />
+    <Compile Include="Abilities\FireBallAbility.cs" />
+    <Compile Include="Abilities\HealAbility.cs" />
+    <Compile Include="Abilities\IceBoltAbility.cs" />
+    <Compile Include="Abilities\MagicArrowAbility.cs" />
+    <Compile Include="Abilities\MeleeAbility.cs" />
+    <Compile Include="Abilities\MoltenEarthAbility.cs" />
+    <Compile Include="Abilities\MultiShotAbility.cs" />
+    <Compile Include="Abilities\NovaAbility.cs" />
+    <Compile Include="Abilities\PoisonCloudAbility.cs" />
+    <Compile Include="Abilities\PoisonMasteryAbility.cs" />
+    <Compile Include="Abilities\PoisonTrapAbility.cs" />
+    <Compile Include="Abilities\PrecisionAbility.cs" />
+    <Compile Include="Abilities\ShadowMasteryAbility.cs" />
+    <Compile Include="Abilities\SlowTimeAbility.cs" />
+    <Compile Include="Abilities\SprintAbility.cs" />
+    <Compile Include="Abilities\StoneSkinAbility.cs" />
+    <Compile Include="Accelerometer.cs" />
+    <Compile Include="AdControlManager.cs" />
+    <Compile Include="Analytics\Analytics.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="BalanceManager.cs" />
+    <Compile Include="Classes\PlayerClass.cs" />
+    <Compile Include="Classes\PlayerClassManager.cs" />
+    <Compile Include="ContentManager.cs" />
+    <Compile Include="Enemies\Drake.cs" />
+    <Compile Include="Enemies\DwarfBoss.cs" />
+    <Compile Include="Enemies\Goblin.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\MathExtensions.cs" />
+    <Compile Include="Extensions\MiscExtensions.cs" />
+    <Compile Include="Extensions\RandomExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="GameScreens\BlacksmithScreen.cs" />
+    <Compile Include="GameScreens\ClassUpgradeScreen.cs" />
+    <Compile Include="GameScreens\DialogueScreen.cs" />
+    <Compile Include="GameScreens\DifficultyScreen.cs" />
+    <Compile Include="GameScreens\EnchanterScreen.cs" />
+    <Compile Include="GameScreens\QuestCompleteScreen.cs" />
+    <Compile Include="GameScreens\QuestScreen.cs" />
+    <Compile Include="GameScreens\ResolutionSelectScreen.cs" />
+    <Compile Include="GameScreens\ResumePauseScreen.cs" />
+    <Compile Include="GameScreens\ReviewScreen.cs" />
+    <Compile Include="GameScreens\SnapScreen.cs" />
+    <Compile Include="GameScreens\StashScreen.cs" />
+    <Compile Include="GameScreens\StashUnlockScreen.cs" />
+    <Compile Include="GameScreens\TeleportScreen.cs" />
+    <Compile Include="GameScreens\TextInputScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameScreens\UnstuckScreen.cs" />
+    <Compile Include="GameScreens\WarpScreen.cs" />
+    <Compile Include="HitDetect.cs" />
+    <Compile Include="Items\TownPortal.cs" />
+    <Compile Include="Joystick.cs" />
+    <Compile Include="KeyEqualityComparer.cs" />
+    <Compile Include="Map\DungeonLevel.cs" />
+    <Compile Include="Map\LevelConfig.cs" />
+    <Compile Include="Map\LevelOrchestrator.cs" />
+    <Compile Include="Map\MapGenerator.cs" />
+    <Compile Include="Map\IMap.cs" />
+    <Compile Include="Enemies\Ghost.cs" />
+    <Compile Include="Enemies\Ogre.cs" />
+    <Compile Include="Enemies\LavaTroll.cs" />
+    <Compile Include="Enemies\SkeletonArcher.cs" />
+    <Compile Include="Enemies\SkeletonKnight.cs" />
+    <Compile Include="GameScreens\AbilitiesScreen.cs" />
+    <Compile Include="GameScreens\FeedBackScreen.cs" />
+    <Compile Include="GameScreens\InventoryScreen.cs" />
+    <Compile Include="GameScreens\DescriptionScreen.cs" />
+    <Compile Include="GameScreens\LoadGameScreen.cs" />
+    <Compile Include="GameScreens\MerchantScreen.cs" />
+    <Compile Include="GameScreens\MessagePopup.cs" />
+    <Compile Include="GameScreens\NewGameScreen.cs" />
+    <Compile Include="GameScreens\OptionScreen.cs" />
+    <Compile Include="GameScreens\StairsScreen.cs" />
+    <Compile Include="GameScreens\StatsScreen.cs" />
+    <Compile Include="GameScreens\UpdateNotesScreen.cs" />
+    <Compile Include="HelpButton.cs" />
+    <Compile Include="HelpScreenManager.cs" />
+    <Compile Include="Items\Chest.cs" />
+    <Compile Include="Items\EquipableItem.cs" />
+    <Compile Include="Items\GoldItem.cs" />
+    <Compile Include="Items\ItemManager.cs" />
+    <Compile Include="Items\Stairs.cs" />
+    <Compile Include="Items\UsableItem.cs" />
+    <Compile Include="MacroButton.cs" />
+    <Compile Include="NameGenerator.cs" />
+    <Compile Include="NPCs\BlacksmithSprite.cs" />
+    <Compile Include="NPCs\EnchanterSprite.cs" />
+    <Compile Include="NPCs\FriendKnight.cs" />
+    <Compile Include="NPCs\QuesterSprite.cs" />
+    <Compile Include="NPCs\ResetSprite.cs" />
+    <Compile Include="NPCs\TeleporterSprite.cs" />
+    <Compile Include="Particles\Particle.cs" />
+    <Compile Include="Particles\ParticleSystem.cs" />
+    <Compile Include="Particles\ParticleParams.cs" />
+    <Compile Include="Extensions\PersistorExtensions.cs" />
+    <Compile Include="Quests\FindItemQuest.cs" />
+    <Compile Include="Quests\FindNpcQuest.cs" />
+    <Compile Include="Quests\KillChampionQuest.cs" />
+    <Compile Include="Quests\EnemyKillsQuest.cs" />
+    <Compile Include="Quests\KillInvadersQuest.cs" />
+    <Compile Include="Quests\Quest.cs" />
+    <Compile Include="Quests\QuestLog.cs" />
+    <Compile Include="Quests\QuestParams.cs" />
+    <Compile Include="Quests\Reward.cs" />
+    <Compile Include="SaveGameManager.cs" />
+    <Compile Include="ScreenShot.cs" />
+    <Compile Include="SpriteManager\DialogueNPCSprite.cs" />
+    <Compile Include="SpriteManager\EnemySprite.cs" />
+    <Compile Include="SpriteManager\EnvItemSprite.cs" />
+    <Compile Include="SpriteManager\ItemSprite.cs" />
+    <Compile Include="NPCs\MerchantSprite.cs" />
+    <Compile Include="SpriteManager\NPCSprite.cs" />
+    <Compile Include="SpriteManager\PlayerSprite.cs" />
+    <Compile Include="SpriteManager\TextSprite.cs" />
+    <Compile Include="SpriteManager\TileSet.cs" />
+    <Compile Include="Fonts.cs" />
+    <Compile Include="GameScreens\ContinueQuestion.cs" />
+    <Compile Include="GameScreens\CreditsScreen.cs" />
+    <Compile Include="GameScreens\GameplayScreen.cs" />
+    <Compile Include="GameScreens\HelpScreen.cs" />
+    <Compile Include="GameScreens\InitialLoadScreen.cs" />
+    <Compile Include="GameScreens\IntroScreen.cs" />
+    <Compile Include="GameScreens\PauseScreen.cs" />
+    <Compile Include="InputManager.cs" />
+    <Compile Include="PathFinding\PriorityQueue.cs" />
+    <Compile Include="PathFinding\SpatialAStar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenManager\GameScreen.cs" />
+    <Compile Include="ScreenManager\MenuEntry.cs" />
+    <Compile Include="ScreenManager\MenuScreen.cs" />
+    <Compile Include="ScreenManager\PopUpScreen.cs" />
+    <Compile Include="ScreenManager\ScreenManager.cs" />
+    <Compile Include="SpriteManager\AnimatedSprite.cs" />
+    <Compile Include="SpriteManager\Animation.cs" />
+    <Compile Include="SpriteManager\CharacterSprite.cs" />
+    <Compile Include="SpriteManager\GameSprite.cs" />
+    <Compile Include="SpriteManager\TileSprite.cs" />
+    <Compile Include="SpriteManager\WeaponSprite.cs" />
+    <Compile Include="StatsManager.cs" />
+    <Compile Include="Storage.cs" />
+    <Compile Include="TextureModifier.cs" />
+    <Compile Include="TimedEffect.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="Weapons\Arrow.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Weapons\ChainLightning.cs" />
+    <Compile Include="Weapons\ExplosionTrap.cs" />
+    <Compile Include="Weapons\Lightning.cs" />
+    <Compile Include="Weapons\Firebolt.cs" />
+    <Compile Include="Weapons\Fireball.cs" />
+    <Compile Include="Weapons\IceBolt.cs" />
+    <Compile Include="Weapons\PoisonBolt.cs" />
+    <Compile Include="Weapons\PoisonTrap.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="XNAExtensions.cs" />
+    <None Include="Properties\AppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Program.cs" />
+    <Compile Include="DungeonGame.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+    <Content Include="Background.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <Content Include="TileArt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Shared.csproj">
+      <Project>{F8FD2DBF-AEE1-4B34-89AE-A7BD815FF2E5}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="Content\Content.contentproj">
+      <Project>{3B3B1FCA-F9AE-4F68-A41A-58AB4196D48A}</Project>
+      <Name>Content</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

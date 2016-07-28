@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MagicProperties>
+  
+  <!-- Magic Weapon -->
+  <MagicProperty Name="Flaming" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="3">
+    <Modifier Stat="FireDamage" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Shock" Class="Magic" Type="Weapon" AddNameToStart="False" ValueAdjust="3">
+    <Modifier Stat="LightningDamage" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Cold" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="3">
+    <Modifier Stat="ColdDamage" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Quick" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="3.5">
+    <Modifier Stat="AttackSpeed" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Strong" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="4.6">
+    <Modifier Stat="Damage" Amount="20" />
+  </MagicProperty>
+  <MagicProperty Name="Precise" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="5.3">
+    <Modifier Stat="CriticalHitChance" Amount="3" />
+  </MagicProperty>
+  <MagicProperty Name="Sick" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="5">
+    <Modifier Stat="PoisonDamage" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Sharp" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="5">
+    <Modifier Stat="BleedDamage" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Warm" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="5">
+    <Modifier Stat="BurnDamage" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Leaching" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="5.5">
+    <Modifier Stat="LifeSteal" Amount="2" />
+  </MagicProperty>
+  <MagicProperty Name="Cyphoning" Class="Magic" Type="Weapon" AddNameToStart="True" ValueAdjust="5.2">
+    <Modifier Stat="ManaSteal" Amount="2" />
+  </MagicProperty>
+
+
+  <!-- Magic Armor -->
+  <MagicProperty Name="Solid" Class="Magic" Type="Armor" AddNameToStart="True"  ValueAdjust="5">
+    <Modifier Stat="Armor" Amount="20" />
+  </MagicProperty>
+  <MagicProperty Name="Speed" Class="Magic" Type="Armor" AddNameToStart="False" ValueAdjust="5.2">
+    <Modifier Stat="MoveSpeed" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Thorns" Class="Magic" Type="Armor" AddNameToStart="False" ValueAdjust="5.2">
+    <Modifier Stat="ReflectDamage" Amount="5" />
+  </MagicProperty>
+  
+  <!-- Magic All-->
+  <MagicProperty Name="Health" Class="Magic" Type="All" AddNameToStart="False" ValueAdjust="4.1">
+    <Modifier Stat="Health" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Energy" Class="Magic" Type="All" AddNameToStart="False" ValueAdjust="4.5">
+    <Modifier Stat="Mana" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Chanting" Class="Magic" Type="All" AddNameToStart="False" ValueAdjust="3.5">
+    <Modifier Stat="CastSpeed" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Ethereal" Class="Magic" Type="All" AddNameToStart="True" ValueAdjust="4.9">
+    <Modifier Stat="SpellDamage" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Healing" Class="Magic" Type="All" AddNameToStart="True" ValueAdjust="3.5">
+    <Modifier Stat="HealthRegen" Amount="25" />
+  </MagicProperty>
+  <MagicProperty Name="Focus" Class="Magic" Type="All" AddNameToStart="False" ValueAdjust="5">
+    <Modifier Stat="ManaRegen" Amount="25" />
+  </MagicProperty>
+  <MagicProperty Name="Resistance" Class="Magic" Type="All" AddNameToStart="False" ValueAdjust="5">
+    <Modifier Stat="MagicResistance" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Glittering" Class="Magic" Type="All" AddNameToStart="True" ValueAdjust="5">
+    <Modifier Stat="GoldDrop" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Chance" Class="Magic" Type="All" AddNameToStart="False" ValueAdjust="5">
+    <Modifier Stat="MagicDrop" Amount="5" />
+  </MagicProperty>
+  
+  <!-- Rare Armor-->
+  <MagicProperty Name="Massive" Class="Rare" Type="Armor" AddNameToStart="True" ValueAdjust="12" ParticleType="ExplosionWhite" ParticleColor="127;51;0">
+    <Modifier Stat="Armor" Amount="40" />
+  </MagicProperty>
+  <MagicProperty Name="Haste" Class="Rare" Type="Armor" AddNameToStart="False" ValueAdjust="16" ParticleType="Starburst" ParticleColor="255;136;0">
+    <Modifier Stat="MoveSpeed" Amount="15" />
+  </MagicProperty>
+  <MagicProperty Name="Spiked" Class="Rare" Type="Armor" AddNameToStart="True" ValueAdjust="16.2" ParticleType="Starburst" ParticleColor="125;125;125">
+    <Modifier Stat="ReflectDamage" Amount="10" />
+  </MagicProperty>
+  
+  
+  <!-- Rare Weapon-->
+  <MagicProperty Name="Inferno" Class="Rare" Type="Weapon" AddNameToStart="False" ValueAdjust="13" ParticleType="Explosion" ParticleColor="255;255;255">
+    <Modifier Stat="FireDamage" Amount="25" />
+  </MagicProperty>
+  <MagicProperty Name="Frozen" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="13" ParticleType="ExplosionWhite" ParticleColor="0;255;182">
+    <Modifier Stat="ColdDamage" Amount="25" />
+  </MagicProperty>
+  <MagicProperty Name="Electric" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="13" ParticleType="Starburst" ParticleColor="255;255;0">
+    <Modifier Stat="LightningDamage" Amount="25" />
+  </MagicProperty>
+  <MagicProperty Name="Dexterity" Class="Rare" Type="Weapon" AddNameToStart="False" ValueAdjust="15" ParticleType="Starburst" ParticleColor="255;102;0">
+    <Modifier Stat="AttackSpeed" Amount="25" />
+  </MagicProperty>
+  <MagicProperty Name="Brutal" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="17" ParticleType="Starburst" ParticleColor="255;0;0">
+    <Modifier Stat="Damage" Amount="40" />
+  </MagicProperty>
+  <MagicProperty Name="Rage" Class="Rare" Type="Weapon" AddNameToStart="False" ValueAdjust="15.5" ParticleType="ExplosionWhite" ParticleColor="255;102;0">
+    <Modifier Stat="CriticalHitChance" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Rotting" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="14" ParticleType="Glow" ParticleColor="47;127;10">
+    <Modifier Stat="PoisonDamage" Amount="15" />
+  </MagicProperty>
+  <MagicProperty Name="Serated" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="15" ParticleType="Glow" ParticleColor="47;127;10">
+    <Modifier Stat="BleedDamage" Amount="15" />
+  </MagicProperty>
+  <MagicProperty Name="Burning" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="15.6" ParticleType="Glow" ParticleColor="125;125;125">
+    <Modifier Stat="BurnDamage" Amount="15" />
+  </MagicProperty>
+  <MagicProperty Name="Fearsome" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="15.7" ParticleType="Glow" ParticleColor="142;7;0">
+    <Modifier Stat="FearChance" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Chilling" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="15.1" ParticleType="Glow" ParticleColor="0;4;145">
+    <Modifier Stat="SlowChance" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Paralyzing" Class="Rare" Type="Weapon" AddNameToStart="True" ValueAdjust="15.2" ParticleType="Glow" ParticleColor="158;1;135">
+    <Modifier Stat="StunChance" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="Extracting" Class="Rare" Type="Weapon" AddNameToStart="False" ValueAdjust="15.5" ParticleType="Glow" ParticleColor="255;0;0">
+    <Modifier Stat="LifeSteal" Amount="5" />
+  </MagicProperty>
+  <MagicProperty Name="the Wraith" Class="Rare" Type="Weapon" AddNameToStart="False" ValueAdjust="15.2" ParticleType="ExplosionWhite" ParticleColor="0;255;255">
+    <Modifier Stat="ManaSteal" Amount="5" />
+  </MagicProperty>
+  
+  <!-- Rare All -->
+  <MagicProperty Name="Fortitude" Class="Rare" Type="All" AddNameToStart="False" ValueAdjust="14" ParticleType="Starburst" ParticleColor="255;255;255">
+    <Modifier Stat="Health" Amount="15" />
+  </MagicProperty>
+  <MagicProperty Name="Spirits" Class="Rare" Type="All" AddNameToStart="False" ValueAdjust="14" ParticleType="Starburst" ParticleColor="0;0;255">
+    <Modifier Stat="Mana" Amount="20" />
+  </MagicProperty>
+  <MagicProperty Name="Reconstitution" Class="Rare" Type="All" AddNameToStart="False" ValueAdjust="17.2" ParticleType="Starburst" ParticleColor="255;0;0">
+    <Modifier Stat="HealthRegen" Amount="40" />
+  </MagicProperty>
+  <MagicProperty Name="Meditation" Class="Rare" Type="All" AddNameToStart="False" ValueAdjust="16.4" ParticleType="ExplosionWhite" ParticleColor="0;0;255">
+    <Modifier Stat="ManaRegen" Amount="40" />
+  </MagicProperty>
+  <MagicProperty Name="Absorption" Class="Rare" Type="All" AddNameToStart="False" ValueAdjust="15" ParticleType="Starburst" ParticleColor="0;255;97">
+    <Modifier Stat="MagicResistance" Amount="10" />
+  </MagicProperty>
+  <MagicProperty Name="Midus" Class="Rare" Type="All" AddNameToStart="False" ValueAdjust="15" ParticleType="Glow" ParticleColor="224;133;42">
+    <Modifier Stat="GoldDrop" Amount="20" />
+  </MagicProperty>
+  <MagicProperty Name="Fortune" Class="Rare" Type="All" AddNameToStart="False" ValueAdjust="15" ParticleType="Glow" ParticleColor="255;178;0">
+    <Modifier Stat="MagicDrop" Amount="10" />
+  </MagicProperty>
+  
+  <!-- Heroic Weapon -->
+  <MagicProperty Name="Ancients" Class="Heroic" Type="Weapon" AddNameToStart="False" ValueAdjust="30" ParticleType="ExplosionWhite" ParticleColor="178;0;255">
+    <Modifier Stat="FireDamage" Amount="20" />
+    <Modifier Stat="ColdDamage" Amount="20" />
+    <Modifier Stat="LightningDamage" Amount="20" />
+  </MagicProperty>
+  <MagicProperty Name="Assasins" Class="Heroic" Type="Weapon" AddNameToStart="True" ValueAdjust="27" ParticleType="Starburst" ParticleColor="155;12;0">
+    <Modifier Stat="CriticalHitChance" Amount="20" />
+  </MagicProperty>
+  <MagicProperty Name="Festering" Class="Heroic" Type="Weapon" AddNameToStart="True" ValueAdjust="24" ParticleType="ExplosionWhite" ParticleColor="9;119;0">
+    <Modifier Stat="PoisonDamage" Amount="40" />
+  </MagicProperty>
+  <MagicProperty Name="Tearing" Class="Heroic" Type="Weapon" AddNameToStart="False" ValueAdjust="25" ParticleType="ExplosionWhite" ParticleColor="9;119;0">
+    <Modifier Stat="BleedDamage" Amount="40" />
+  </MagicProperty>
+  <MagicProperty Name="the Gods" Class="Heroic" Type="Weapon" AddNameToStart="False" ValueAdjust="25" ParticleType="ExplosionWhite" ParticleColor="9;119;0">
+    <Modifier Stat="BleedDamage" Amount="15" />
+    <Modifier Stat="PoisonDamage" Amount="15" />
+    <Modifier Stat="BurnDamage" Amount="15" />
+  </MagicProperty>
+  <MagicProperty Name="the Vampire" Class="Heroic" Type="Weapon" AddNameToStart="False" ValueAdjust="23" ParticleType="ExplosionWhite" ParticleColor="255;0;127">
+    <Modifier Stat="LifeSteal" Amount="15" />
+    <Modifier Stat="ManaSteal" Amount="15" />
+  </MagicProperty>
+
+  <!-- Heroic Armor -->
+  <MagicProperty Name="Unbreakable" Class="Heroic" Type="Armor" AddNameToStart="True" ValueAdjust="25" ParticleType="ExplosionWhite" ParticleColor="128;128;128">
+    <Modifier Stat="Armor" Amount="70" />
+  </MagicProperty>
+  <MagicProperty Name="Repentance" Class="Rare" Type="Heroic" AddNameToStart="False" ValueAdjust="26.2" ParticleType="ExplosionWhite" ParticleColor="255;2;145">
+    <Modifier Stat="ReflectDamage" Amount="20" />
+  </MagicProperty>
+
+  <!-- Heroic All -->
+  <MagicProperty Name="Constitution" Class="Heroic" Type="All" AddNameToStart="False" ValueAdjust="28" ParticleType="Starburst" ParticleColor="0;255;80">
+    <Modifier Stat="Health" Amount="30" />
+    <Modifier Stat="Mana" Amount="30" />
+  </MagicProperty>
+  <MagicProperty Name="Regeneration" Class="Heroic" Type="All" AddNameToStart="False" ValueAdjust="26" ParticleType="ExplosionWhite" ParticleColor="0;255;0">
+    <Modifier Stat="HealthRegen" Amount="40" />
+    <Modifier Stat="ManaRegen" Amount="40" />
+  </MagicProperty>
+  <MagicProperty Name="the Void" Class="Heroic" Type="All" AddNameToStart="False" ValueAdjust="24" ParticleType="ExplosionWhite" ParticleColor="81;81;81">
+    <Modifier Stat="MagicResistance" Amount="20" />
+  </MagicProperty>
+  <MagicProperty Name="Plunder" Class="Heroic" Type="All" AddNameToStart="False" ValueAdjust="23" ParticleType="ExplosionWhite" ParticleColor="198;109;0">
+    <Modifier Stat="GoldDrop" Amount="30" />
+    <Modifier Stat="MagicDrop" Amount="20" />
+  </MagicProperty>
+
+
+
+</MagicProperties>

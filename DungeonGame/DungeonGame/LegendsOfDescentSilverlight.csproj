@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DungeonGame</RootNamespace>
+    <AssemblyName>LoDSilverlight</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>LoDSilverlight.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>DungeonGame.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ProjectGuid>{D05BD5F8-25DA-4543-90E3-631375D54336}</ProjectGuid>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Silverlight\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Silverlight\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Silverlight\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\Silverlight\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abilities\Ability.cs" />
+    <Compile Include="Abilities\BlizzardAbility.cs" />
+    <Compile Include="Abilities\BowAbility.cs" />
+    <Compile Include="Abilities\ChainLightningAbility.cs" />
+    <Compile Include="Abilities\CleaveAbility.cs" />
+    <Compile Include="Abilities\DefenceAbility.cs" />
+    <Compile Include="Abilities\EarthquakeAbility.cs" />
+    <Compile Include="Abilities\EpicStrikeAbility.cs" />
+    <Compile Include="Abilities\ExplosionTrapAbility.cs" />
+    <Compile Include="Abilities\FearAbility.cs" />
+    <Compile Include="Abilities\FireBallAbility.cs" />
+    <Compile Include="Abilities\FireBoltAbility.cs" />
+    <Compile Include="Abilities\FrenzyAbility.cs" />
+    <Compile Include="Abilities\FrostArmorAbility.cs" />
+    <Compile Include="Abilities\FrozenGroundAbility.cs" />
+    <Compile Include="Abilities\HealAbility.cs" />
+    <Compile Include="Abilities\IceBoltAbility.cs" />
+    <Compile Include="Abilities\InvisibilityAbility.cs" />
+    <Compile Include="Abilities\LightningAbility.cs" />
+    <Compile Include="Abilities\MagicArrowAbility.cs" />
+    <Compile Include="Abilities\MeleeAbility.cs" />
+    <Compile Include="Abilities\MoltenEarthAbility.cs" />
+    <Compile Include="Abilities\MultiShotAbility.cs" />
+    <Compile Include="Abilities\NovaAbility.cs" />
+    <Compile Include="Abilities\PoisonCloudAbility.cs" />
+    <Compile Include="Abilities\PoisonMasteryAbility.cs" />
+    <Compile Include="Abilities\PoisonTrapAbility.cs" />
+    <Compile Include="Abilities\PrecisionAbility.cs" />
+    <Compile Include="Abilities\ShadowMasteryAbility.cs" />
+    <Compile Include="Abilities\SlowTimeAbility.cs" />
+    <Compile Include="Abilities\SprintAbility.cs" />
+    <Compile Include="Abilities\StoneSkinAbility.cs" />
+    <Compile Include="Accelerometer.cs" />
+    <Compile Include="AdControlManager.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="BalanceManager.cs" />
+    <Compile Include="Classes\PlayerClass.cs" />
+    <Compile Include="Classes\PlayerClassManager.cs" />
+    <Compile Include="ContentManager.cs" />
+    <Compile Include="DungeonGame.cs" />
+    <Compile Include="Enemies\Ghost.cs" />
+    <Compile Include="Enemies\Goblin.cs" />
+    <Compile Include="Enemies\LavaTroll.cs" />
+    <Compile Include="Enemies\Ogre.cs" />
+    <Compile Include="Enemies\SkeletonArcher.cs" />
+    <Compile Include="Enemies\SkeletonKnight.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\PersistorExtensions.cs" />
+    <Compile Include="Extensions\RandomExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Fonts.cs" />
+    <Compile Include="GameScreens\AbilitiesScreen.cs" />
+    <Compile Include="GameScreens\BlacksmithScreen.cs" />
+    <Compile Include="GameScreens\ClassUpgradeScreen.cs" />
+    <Compile Include="GameScreens\ContinueQuestion.cs" />
+    <Compile Include="GameScreens\CreditsScreen.cs" />
+    <Compile Include="GameScreens\DescriptionScreen.cs" />
+    <Compile Include="GameScreens\DifficultyScreen.cs" />
+    <Compile Include="GameScreens\EnchanterScreen.cs" />
+    <Compile Include="GameScreens\FeedBackScreen.cs" />
+    <Compile Include="GameScreens\GameplayScreen.cs" />
+    <Compile Include="GameScreens\HelpScreen.cs" />
+    <Compile Include="GameScreens\InitialLoadScreen.cs" />
+    <Compile Include="GameScreens\IntroScreen.cs" />
+    <Compile Include="GameScreens\InventoryScreen.cs" />
+    <Compile Include="GameScreens\LoadGameScreen.cs" />
+    <Compile Include="GameScreens\MerchantScreen.cs" />
+    <Compile Include="GameScreens\MessagePopup.cs" />
+    <Compile Include="GameScreens\NewGameScreen.cs" />
+    <Compile Include="GameScreens\OptionScreen.cs" />
+    <Compile Include="GameScreens\PauseScreen.cs" />
+    <Compile Include="GameScreens\QuestCompleteScreen.cs" />
+    <Compile Include="GameScreens\QuestScreen.cs" />
+    <Compile Include="GameScreens\ResumePauseScreen.cs" />
+    <Compile Include="GameScreens\StairsScreen.cs" />
+    <Compile Include="GameScreens\StashScreen.cs" />
+    <Compile Include="GameScreens\StashUnlockScreen.cs" />
+    <Compile Include="GameScreens\StatsScreen.cs" />
+    <Compile Include="GameScreens\TextInputScreen.cs" />
+    <Compile Include="GameScreens\UnstuckScreen.cs" />
+    <Compile Include="GameScreens\UpdateNotesScreen.cs" />
+    <Compile Include="GameScreens\WarpScreen.cs" />
+    <Compile Include="HelpButton.cs" />
+    <Compile Include="HelpScreenManager.cs" />
+    <Compile Include="HitDetect.cs" />
+    <Compile Include="InputManager.cs" />
+    <Compile Include="Items\Chest.cs" />
+    <Compile Include="Items\EquipableItem.cs" />
+    <Compile Include="Items\GoldItem.cs" />
+    <Compile Include="Items\ItemManager.cs" />
+    <Compile Include="Items\Stairs.cs" />
+    <Compile Include="Items\UsableItem.cs" />
+    <Compile Include="MacroButton.cs" />
+    <Compile Include="Map\DungeonLevel.cs" />
+    <Compile Include="Map\IMap.cs" />
+    <Compile Include="Map\LevelConfig.cs" />
+    <Compile Include="Map\LevelOrchestrator.cs" />
+    <Compile Include="Map\MapGenerator.cs" />
+    <Compile Include="NameGenerator.cs" />
+    <Compile Include="NPCs\BlacksmithSprite.cs" />
+    <Compile Include="NPCs\EnchanterSprite.cs" />
+    <Compile Include="NPCs\FriendKnight.cs" />
+    <Compile Include="NPCs\MerchantSprite.cs" />
+    <Compile Include="Particles\Particle.cs" />
+    <Compile Include="Particles\ParticleParams.cs" />
+    <Compile Include="Particles\ParticleSystem.cs" />
+    <Compile Include="PathFinding\PriorityQueue.cs" />
+    <Compile Include="PathFinding\SpatialAStar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quests\EnemyKillsQuest.cs" />
+    <Compile Include="Quests\FindItemQuest.cs" />
+    <Compile Include="Quests\KillChampionQuest.cs" />
+    <Compile Include="Quests\Quest.cs" />
+    <Compile Include="Quests\QuestLog.cs" />
+    <Compile Include="Quests\RescueQuest.cs" />
+    <Compile Include="Quests\Reward.cs" />
+    <Compile Include="SaveGameManager.cs" />
+    <Compile Include="ScreenManager\GameScreen.cs" />
+    <Compile Include="ScreenManager\MenuEntry.cs" />
+    <Compile Include="ScreenManager\MenuScreen.cs" />
+    <Compile Include="ScreenManager\PopUpScreen.cs" />
+    <Compile Include="ScreenManager\ScreenManager.cs" />
+    <Compile Include="SharedWorkAround.cs" />
+    <Compile Include="Silverlight Application.cs" />
+    <Compile Include="SpriteManager\AnimatedSprite.cs" />
+    <Compile Include="SpriteManager\Animation.cs" />
+    <Compile Include="SpriteManager\CharacterSprite.cs" />
+    <Compile Include="SpriteManager\EnemySprite.cs" />
+    <Compile Include="SpriteManager\EnvItemSprite.cs" />
+    <Compile Include="SpriteManager\GameSprite.cs" />
+    <Compile Include="SpriteManager\ItemSprite.cs" />
+    <Compile Include="SpriteManager\NPCSprite.cs" />
+    <Compile Include="SpriteManager\PlayerSprite.cs" />
+    <Compile Include="SpriteManager\TextSprite.cs" />
+    <Compile Include="SpriteManager\TileSet.cs" />
+    <Compile Include="SpriteManager\TileSprite.cs" />
+    <Compile Include="SpriteManager\WeaponSprite.cs" />
+    <Compile Include="TextureModifier.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="UserInterface.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Weapons\Arrow.cs" />
+    <Compile Include="Weapons\ChainLightning.cs" />
+    <Compile Include="Weapons\ExplosionTrap.cs" />
+    <Compile Include="Weapons\Fireball.cs" />
+    <Compile Include="Weapons\Firebolt.cs" />
+    <Compile Include="Weapons\IceBolt.cs" />
+    <Compile Include="Weapons\Lightning.cs" />
+    <Compile Include="Weapons\PoisonBolt.cs" />
+    <Compile Include="Weapons\PoisonTrap.cs" />
+    <Compile Include="WindowsTouchCollection.cs" />
+    <Compile Include="XNAExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\Fonts\ARIAL.TTF" />
+    <Resource Include="Content\Fonts\DC_S_3.TTF" />
+    <Resource Include="Content\Fonts\DUM1.TTF" />
+    <Resource Include="Content\Fonts\ARIALI.TTF" />
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExEn2.1\ExEnCore\ExEnCore Silverlight.csproj">
+      <Project>{7D87751B-AEF3-4ED6-BC1D-A3826363A5B2}</Project>
+      <Name>ExEnCore Silverlight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExEn2.1\ExEnSilver\ExEnSilver.csproj">
+      <Project>{5A28896D-B208-4130-B41E-C77B7C14482A}</Project>
+      <Name>ExEnSilver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GamePage.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Analytics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Audio\Body_Hit_08.wav" />
+    <Content Include="Content\Audio\Body_Hit_10.wav" />
+    <Content Include="Content\Audio\Body_Hit_11.wav" />
+    <Content Include="Content\Audio\Body_Hit_43.wav" />
+    <Content Include="Content\Audio\Boom.wav" />
+    <Content Include="Content\Audio\BowShoot.wav" />
+    <Content Include="Content\Audio\BoxOpen1.wav" />
+    <Content Include="Content\Audio\BoxOpen2.wav" />
+    <Content Include="Content\Audio\BoxOpen3.wav" />
+    <Content Include="Content\Audio\Chain1.wav" />
+    <Content Include="Content\Audio\Chain2.wav" />
+    <Content Include="Content\Audio\Chain3.wav" />
+    <Content Include="Content\Audio\Drop.wav" />
+    <Content Include="Content\Audio\Element1.wav" />
+    <Content Include="Content\Audio\Element2.wav" />
+    <Content Include="Content\Audio\Element3.wav" />
+    <Content Include="Content\Audio\Element4.wav" />
+    <Content Include="Content\Audio\Fear1.wav" />
+    <Content Include="Content\Audio\Fear2.wav" />
+    <Content Include="Content\Audio\Fear3.wav" />
+    <Content Include="Content\Audio\Fear4.wav" />
+    <Content Include="Content\Audio\Fear5.wav" />
+    <Content Include="Content\Audio\Fire1.wav" />
+    <Content Include="Content\Audio\Fire2.wav" />
+    <Content Include="Content\Audio\Fire3.wav" />
+    <Content Include="Content\Audio\Frozen1.wav" />
+    <Content Include="Content\Audio\Frozen2.wav" />
+    <Content Include="Content\Audio\Frozen3.wav" />
+    <Content Include="Content\Audio\Ghost1.wav" />
+    <Content Include="Content\Audio\Ghost2.wav" />
+    <Content Include="Content\Audio\Ghost3.wav" />
+    <Content Include="Content\Audio\Ghost4.wav" />
+    <Content Include="Content\Audio\Ghost5.wav" />
+    <Content Include="Content\Audio\Gold1.wav" />
+    <Content Include="Content\Audio\Gold2.wav" />
+    <Content Include="Content\Audio\Gold3.wav" />
+    <Content Include="Content\Audio\HeavyDrop1.wav" />
+    <Content Include="Content\Audio\HeavyDrop2.wav" />
+    <Content Include="Content\Audio\HeavyDrop3.wav" />
+    <Content Include="Content\Audio\Invis1.wav" />
+    <Content Include="Content\Audio\Invis2.wav" />
+    <Content Include="Content\Audio\Invis3.wav" />
+    <Content Include="Content\Audio\Invis4.wav" />
+    <Content Include="Content\Audio\Invis5.wav" />
+    <Content Include="Content\Audio\Magic1.wav" />
+    <Content Include="Content\Audio\Magic2.wav" />
+    <Content Include="Content\Audio\Magic3.wav" />
+    <Content Include="Content\Audio\Magic4.wav" />
+    <Content Include="Content\Audio\Magic5.wav" />
+    <None Include="Content\Audio\MainMusic.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\Audio\menu_select.wav" />
+    <Content Include="Content\Audio\MetalDrop.wav" />
+    <Content Include="Content\Audio\Ork1.wav" />
+    <Content Include="Content\Audio\Ork2.wav" />
+    <Content Include="Content\Audio\Ork3.wav" />
+    <Content Include="Content\Audio\Poison1.wav" />
+    <Content Include="Content\Audio\Poison2.wav" />
+    <Content Include="Content\Audio\Poison3.wav" />
+    <Content Include="Content\Audio\Potion1.wav" />
+    <Content Include="Content\Audio\Potion2.wav" />
+    <Content Include="Content\Audio\Potion3.wav" />
+    <Content Include="Content\Audio\Shout1.wav" />
+    <Content Include="Content\Audio\Shout2.wav" />
+    <Content Include="Content\Audio\Shout3.wav" />
+    <Content Include="Content\Audio\Skel1.wav" />
+    <Content Include="Content\Audio\Skel2.wav" />
+    <Content Include="Content\Audio\Skel3.wav" />
+    <Content Include="Content\Audio\Skel4.wav" />
+    <Content Include="Content\Audio\Slow1.wav" />
+    <Content Include="Content\Audio\Slow2.wav" />
+    <Content Include="Content\Audio\Slow3.wav" />
+    <Content Include="Content\Audio\SmallExplosion.wav" />
+    <Content Include="Content\Audio\Spark.wav" />
+    <Content Include="Content\Audio\SpeedUp1.wav" />
+    <Content Include="Content\Audio\SpeedUp2.wav" />
+    <Content Include="Content\Audio\SpeedUp3.wav" />
+    <Content Include="Content\Audio\StairsDown.wav" />
+    <Content Include="Content\Audio\StairsUp.wav" />
+    <Content Include="Content\Audio\Stomp1.wav" />
+    <Content Include="Content\Audio\Stomp2.wav" />
+    <Content Include="Content\Audio\Stomp3.wav" />
+    <Content Include="Content\Audio\Stomp4.wav" />
+    <Content Include="Content\Audio\Stone1.wav" />
+    <Content Include="Content\Audio\Stone2.wav" />
+    <Content Include="Content\Audio\Stone3.wav" />
+    <Content Include="Content\Audio\Stone4.wav" />
+    <Content Include="Content\Audio\Swing1.wav" />
+    <Content Include="Content\Audio\Swing2.wav" />
+    <Content Include="Content\Audio\Sword1.wav" />
+    <Content Include="Content\Audio\Sword2.wav" />
+    <Content Include="Content\Audio\Sword3.wav" />
+    <Content Include="Content\Audio\Sword4.wav" />
+    <Content Include="Content\Audio\Sword5.wav" />
+    <Content Include="Content\Audio\Sword6.wav" />
+    <Content Include="Content\Audio\Trumpet.wav" />
+    <Resource Include="Content\Data\Items.xml" />
+    <Resource Include="Content\Data\Levels.xml" />
+    <Resource Include="Content\Data\MagicProperties.xml" />
+    <Content Include="Content\Textures\Abilities\AbilityIcons.png" />
+    <Content Include="Content\Textures\Blank_Sprite.png" />
+    <Content Include="Content\Textures\Clear_Sprite.png" />
+    <Content Include="Content\Textures\Enemies\GhostAttack.png" />
+    <Content Include="Content\Textures\Enemies\GhostDie.png" />
+    <Content Include="Content\Textures\Enemies\GhostWalk.png" />
+    <Content Include="Content\Textures\Enemies\GoblinAttack.png" />
+    <Content Include="Content\Textures\Enemies\GoblinAttackLeader.png" />
+    <Content Include="Content\Textures\Enemies\GoblinDie.png" />
+    <Content Include="Content\Textures\Enemies\GoblinDieLeader.png" />
+    <Content Include="Content\Textures\Enemies\GoblinWalk.png" />
+    <Content Include="Content\Textures\Enemies\GoblinWalkLeader.png" />
+    <Content Include="Content\Textures\Enemies\LavaTrollAttack.png" />
+    <Content Include="Content\Textures\Enemies\LavaTrollDie.png" />
+    <Content Include="Content\Textures\Enemies\LavaTrollWalk.png" />
+    <Content Include="Content\Textures\Enemies\OgreAttack.png" />
+    <Content Include="Content\Textures\Enemies\OgreDie.png" />
+    <Content Include="Content\Textures\Enemies\OgreRun.png" />
+    <Content Include="Content\Textures\Enemies\SkelArcherAttack.png" />
+    <Content Include="Content\Textures\Enemies\SkelArcherDie.png" />
+    <Content Include="Content\Textures\Enemies\SkelArcherWalk.png" />
+    <Content Include="Content\Textures\Enemies\SkelKnightAttack.png" />
+    <Content Include="Content\Textures\Enemies\SkelKnightDie.png" />
+    <Content Include="Content\Textures\Enemies\SkelKnightWalk.png" />
+    <Content Include="Content\Textures\FireballSheet.png" />
+    <Content Include="Content\Textures\greyout.png" />
+    <Content Include="Content\Textures\help.png" />
+    <Content Include="Content\Textures\Help\AttackHelp.png" />
+    <Content Include="Content\Textures\IceboltSheet.png" />
+    <Content Include="Content\Textures\Items\Chests.png" />
+    <Content Include="Content\Textures\Items\ItemIcons.png" />
+    <Content Include="Content\Textures\Items\potions.png" />
+    <Content Include="Content\Textures\LightningSheet.png" />
+    <Content Include="Content\Textures\NPC\merchantStand.png" />
+    <Content Include="Content\Textures\Particles\explosion.png" />
+    <Content Include="Content\Textures\Particles\explWhite.png" />
+    <Content Include="Content\Textures\Particles\glow.png" />
+    <Content Include="Content\Textures\Particles\smoke.png" />
+    <Content Include="Content\Textures\Particles\starburst.png" />
+    <Content Include="Content\Textures\PlayerDisplay\BlankFullBar.png" />
+    <Content Include="Content\Textures\PlayerDisplay\BlankFullBarHoriz.png" />
+    <Content Include="Content\Textures\PlayerDisplay\BlankFullBarHorizs.png" />
+    <Content Include="Content\Textures\PlayerDisplay\emptybar.png" />
+    <Content Include="Content\Textures\PlayerDisplay\emptybarhoriz.png" />
+    <Content Include="Content\Textures\PlayerDisplay\emptybarhorizs.png" />
+    <Content Include="Content\Textures\PlayerDisplay\score_box.png" />
+    <Content Include="Content\Textures\PlayerDisplay\SelectOutline.png" />
+    <Content Include="Content\Textures\PlayerDisplay\SelectOutlineHighlight.png" />
+    <Content Include="Content\Textures\Player\commoner_attack_bow.png" />
+    <Content Include="Content\Textures\Player\commoner_attack_sword.png" />
+    <Content Include="Content\Textures\Player\commoner_attack_unarmed.png" />
+    <Content Include="Content\Textures\Player\commoner_death_unarmed.png" />
+    <Content Include="Content\Textures\Player\commoner_walk_bow.png" />
+    <Content Include="Content\Textures\Player\commoner_walk_sword.png" />
+    <Content Include="Content\Textures\Player\commoner_walk_unarmed.png" />
+    <Content Include="Content\Textures\Player\mage_attack_bow.png" />
+    <Content Include="Content\Textures\Player\mage_attack_sword.png" />
+    <Content Include="Content\Textures\Player\mage_attack_unarmed.png" />
+    <Content Include="Content\Textures\Player\mage_death_unarmed.png" />
+    <Content Include="Content\Textures\Player\mage_walk_bow.png" />
+    <Content Include="Content\Textures\Player\mage_walk_sword.png" />
+    <Content Include="Content\Textures\Player\mage_walk_unarmed.png" />
+    <Content Include="Content\Textures\Player\rogue_attack_bow.png" />
+    <Content Include="Content\Textures\Player\rogue_attack_sword.png" />
+    <Content Include="Content\Textures\Player\rogue_attack_unarmed.png" />
+    <Content Include="Content\Textures\Player\rogue_death_unarmed.png" />
+    <Content Include="Content\Textures\Player\rogue_walk_bow.png" />
+    <Content Include="Content\Textures\Player\rogue_walk_sword.png" />
+    <Content Include="Content\Textures\Player\rogue_walk_unarmed.png" />
+    <Content Include="Content\Textures\Player\warrior_attack_bow.png" />
+    <Content Include="Content\Textures\Player\warrior_attack_sword.png" />
+    <Content Include="Content\Textures\Player\warrior_attack_unarmed.png" />
+    <Content Include="Content\Textures\Player\warrior_death_unarmed.png" />
+    <Content Include="Content\Textures\Player\warrior_walk_bow.png" />
+    <Content Include="Content\Textures\Player\warrior_walk_sword.png" />
+    <Content Include="Content\Textures\Player\warrior_walk_unarmed.png" />
+    <Content Include="Content\Textures\PoisonSheet.png" />
+    <Content Include="Content\Textures\Projectiles\Arrow.png" />
+    <Content Include="Content\Textures\Projectiles\Traps.png" />
+    <Content Include="Content\Textures\Tiles\BrickTiles.png" />
+    <Content Include="Content\Textures\Tiles\CaveTiles.png" />
+    <Content Include="Content\Textures\Tiles\CrystalTiles.png" />
+    <Content Include="Content\Textures\Tiles\Doors.png" />
+    <Content Include="Content\Textures\Tiles\LavaTiles.png" />
+    <Content Include="Content\Textures\UI\ArrowRight.PNG" />
+    <Content Include="Content\Textures\UI\ArrowUp.PNG" />
+    <Content Include="Content\Textures\UI\blankSlot.png" />
+    <Content Include="Content\Textures\UI\CornerButton.png" />
+    <Content Include="Content\Textures\UI\Dead.png" />
+    <Content Include="Content\Textures\UI\DefaultAd.png" />
+    <Content Include="Content\Textures\UI\dropSlot.png" />
+    <Content Include="Content\Textures\UI\star.png" />
+    <Content Include="Content\Textures\UI\Swap.png" />
+    <Content Include="Content\Textures\UI\trashSlot.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

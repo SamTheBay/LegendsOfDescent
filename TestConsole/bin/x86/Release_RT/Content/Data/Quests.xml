@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Quest Names must be unique -->
+    <!-- The first quest will be added to the player automatically. -->
+    
+    <Quest Name="Find Quentin"
+           AskText=""
+           InProgressText=""
+           Description="Find Quentin, who will guide your exploration."
+           AvailableAtLevel="0"
+           BlocksEnteringLevel="1"
+           Prerequisites="">
+        <BaseQuest Name="FindNpc">
+            <Param Name="npcName" Value="Quentin" />
+        </BaseQuest>
+        <Reward Gold="0" Experience="10" />
+    </Quest>
+
+  <Quest Name="Kill the Goblin Stragglers"
+         AskText="By the stone, you are alive! Thank the gods!\n We all have lots of questions about what has happened and I don't have time to tell you what I know right now.\nSome nasty goblins have made their way into town; show them out by the doors of death!"
+         InProgressText="Have you killed the goblins yet? Hurry before they cause more trouble."
+         Description="Kill the goblins who snuck into town."
+         AvailableAtLevel="0"
+         BlocksEnteringLevel="1"
+         Prerequisites="Find Quentin">
+    <BaseQuest Name="KillInvaders">
+      <Param Name="dungeonLevel" Value="0" />
+      <Param Name="enemyType" Value="Goblin" />
+      <Param Name="invaderCount" Value="3" />
+    </BaseQuest>
+    <Reward Gold="100" Experience="50" />
+  </Quest>
+
+  <Quest Name="Retrieve the Ancient Scrolls"
+       AskText="Good job killing the goblins, but some of them have fled the city with our Ancient Scrolls. They are bound to have information about what has happened. Can you head into the sewers and retrieve them for us?"
+       InProgressText="The goblins can't have gotten far with the scrolls. Keep searching."
+       Description="Find the Ancient Scrolls on dungeon level 1."
+       AvailableAtLevel="0"
+       BlocksEnteringLevel="2"
+       Prerequisites="Kill the Goblin Stragglers">
+    <BaseQuest Name="FindItem">
+      <Param Name="dungeonLevel" Value="1" />
+      <Param Name="itemLevel" Value="1" />
+      <Param Name="itemName" Value="Tome" />
+      <Param Name="itemDisplayName" Value="Ancient Scrolls" />
+    </BaseQuest>
+    <Reward Gold="400" Experience="150" />
+  </Quest>
+
+  <Quest Name="Track Down Dragnor"
+   AskText="Amazing, you actually found the scrolls!\nIt is going to take me some time to study them for answers. In the meantime, we have questioned some of the survivors and they say that they saw Dragnor the mine chief flee into the sewers after the assault. I need you to go into the sewers and search him out. He may have answers as to what has happened here."
+   InProgressText="I don't know what Dragnor was up to, but it is suspicous. We need to question him."
+   Description="Search the sewers for Dragnor and discover what his involvment was in the cities colapse."
+   AvailableAtLevel="1"
+   BlocksEnteringLevel="6"
+   Prerequisites="Retrieve the Ancient Scrolls">
+    <BaseQuest Name="EnemyKills">
+      <Param Name="dungeonLevel" Value="5" />
+      <Param Name="enemyType" Value="DwarfBoss" />
+      <Param Name="enemyCount" Value="1" />
+    </BaseQuest>
+    <Reward Gold="5000" Experience="500" />
+  </Quest>
+
+
+  <Quest Name="Retrieve the Book of Souls"
+     AskText="You have done well to track down Dragnor. I am greatly troubled by your report about him. I will continue to dig through the scrolls for answers. There is another book that is strangely missing from our library, The Book of Souls. I think this book would be helpful in understanding what has happened. Perhaps Dragnor has taken it? See if you can find it in the caves where he is currently dwelling."
+     InProgressText="We need the book of souls to understand what is going on with Dragnor."
+     Description="Find the Book of Souls on dungeon level 7."
+     AvailableAtLevel="5"
+     BlocksEnteringLevel="8"
+     Prerequisites="Track Down Dragnor">
+    <BaseQuest Name="FindItem">
+      <Param Name="dungeonLevel" Value="7" />
+      <Param Name="itemLevel" Value="7" />
+      <Param Name="itemName" Value="Tome" />
+      <Param Name="itemDisplayName" Value="Book of Souls" />
+    </BaseQuest>
+    <Reward Gold="4000" Experience="600" />
+  </Quest>
+  
+
+  <Quest Name="Catch Dragnor"
+ AskText="Thank you for finding the book. I will continue to study, but I think that you must continue to hunt Dragnor down in the meantime. Based on what I know so far he is only going to get more dangerous. It is not wise to let him do as he will while we don't understand what is happening."
+ InProgressText="There is no doubt in my mind that Dragnor is dangerous and somehow linked to the invasion. You must find him in the caves."
+ Description="Follow Dragnor into the caves and find where he is hiding."
+ AvailableAtLevel="7"
+ BlocksEnteringLevel="11"
+ Prerequisites="Retrieve the Book of Souls">
+    <BaseQuest Name="EnemyKills">
+      <Param Name="dungeonLevel" Value="10" />
+      <Param Name="enemyType" Value="DwarfBoss2" />
+      <Param Name="enemyCount" Value="1" />
+    </BaseQuest>
+    <Reward Gold="10000" Experience="1000" />
+  </Quest>
+
+  
+  <Quest Name="Retrieve the Amulet of Legends"
+   AskText="Your story is amazing, you truly are growing strong. I did not believe that you would be able to slow Dragnor down this much. I have completed my study of the scrolls and I am afraid the news is bad. Dragnor has found an ancient artifact known as the Soul Stone. It grants great powers to its owner, but it also causes irreversible corruption deep in the soul. Dragnor will continue to get more powerful as the corruption spreads throughout him. I am afraid it is too late for you to stop him alone. However, the scrolls speak of another ancient artifact known as the Amulet of Legends. The Amulet of Legends can protect you from the corruption of the Soul Stone. You must try to find it, it is hidden in the depths of the crystal caves. This is our only hope."
+   InProgressText="You must find the Amulet of Legends. You won't survive another encounter with Dragnor without it."
+   Description="Find the Amulet of Legends on dungeon level 12."
+   AvailableAtLevel="10"
+   BlocksEnteringLevel="13"
+   Prerequisites="Catch Dragnor">
+    <BaseQuest Name="FindItem">
+      <Param Name="dungeonLevel" Value="12" />
+      <Param Name="itemLevel" Value="12" />
+      <Param Name="itemName" Value="Amulet" />
+      <Param Name="itemDisplayName" Value="Amulet of Legends" />
+    </BaseQuest>
+    <Reward Gold="10000" Experience="1200" />
+  </Quest>
+  
+  
+  <Quest Name="Stop Dragnor"
+ AskText="You have found the amulet! I have used its powers to bless you with its protection. I am hopeful that you may have a chance to stop Dragnor now. Venture deeper into the crystal caves and find him. You must stop him before he has become too powerful."
+ InProgressText="Dragnor grows stronger by the day my friend. There is no time to waste."
+ Description="Find Dragnor in the Crystal Caves and stop him."
+ AvailableAtLevel="12"
+ BlocksEnteringLevel="16"
+ Prerequisites="Retrieve the Amulet of Legends">
+    <BaseQuest Name="EnemyKills">
+      <Param Name="dungeonLevel" Value="15" />
+      <Param Name="enemyType" Value="DwarfBoss2" />
+      <Param Name="enemyCount" Value="1" />
+    </BaseQuest>
+    <Reward Gold="50000" Experience="5000" />
+  </Quest>
+
+
+
+  <Quest Name="Kill the Soul Demon"
+ AskText="This is terrible news. The corruption is spreading faster than I had ever imagined. The scrolls say that out of Dragnors flesh will arise a Soul Demon. This is a powerfully corrupt being that will be bent on destruction. We must destroy the soul demon if it has already spread out from him, which based on your last encounter it must have."
+ InProgressText="The Soul Demon is very dangerous, you must dispose of it."
+ Description="Find and kill the Soul Demon on dungeon level 17."
+ AvailableAtLevel="15"
+ BlocksEnteringLevel="18"
+ Prerequisites="Stop Dragnor">
+    <BaseQuest Name="KillChampion">
+      <Param Name="dungeonLevel" Value="17" />
+      <Param Name="championName" Value="Soul Demon" />
+    </BaseQuest>
+    <Reward Gold="70000" Experience="7000" />
+  </Quest>
+  
+
+  <Quest Name="Defeat Dragnor"
+ AskText="I fear that it may be too late to stop Dragnor now. His corruption has completed and there is no doubt in my mind that he will arise out of the lava caves to finish us all. The power of the amulet may not be enough to protect you anymore, but we have no choice. You are the only one strong enough to try and stop him, you must try."
+ InProgressText="You are our only hope. May the stone protect you."
+ Description="Hunt down Dragnor in the lava caves and finish him."
+ AvailableAtLevel="17"
+ BlocksEnteringLevel="21"
+ Prerequisites="Kill the Soul Demon">
+    <BaseQuest Name="EnemyKills">
+      <Param Name="dungeonLevel" Value="20" />
+      <Param Name="enemyType" Value="DwarfBoss3" />
+      <Param Name="enemyCount" Value="1" />
+    </BaseQuest>
+    <Reward Gold="100000" Experience="10000" />
+  </Quest>
+
+</Quests>

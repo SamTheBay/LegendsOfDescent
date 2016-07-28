@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><style>
+html 
+{
+    font-family:"Segoe UI";
+}
+#content
+{
+    margin:0 auto;
+    max-width:800px;
+}
+</style></head>
+
+<body>
+
+<div id="content">
+<h1>Dungeon Game</h1>
+
+<h2>Overview</h2>
+<p>So far the goal is to make a pretty strait forward fantasy RPG for
+the WP7 platform. One key piece is that we want to make the content of
+the game as programmatically dynamic as possible. This can manifest
+itself in being able to generate new dungeons, monsters, items and
+quests on the fly. The action in the game should be fast similar to
+that of Diablo of original Zelda. The graphics will be a 2d tile engine
+for the environment and 2d sprites for everything else (though we may
+want to put in some particle generators).</p>
+
+<h2>Plot</h2>
+<p>In process</p>
+
+<h2>User Interface</h2>
+
+<h3>Menus</h3>
+<ul>
+<li>Opening -</li>
+<li>How to play -</li>
+<li>Save/load game -</li>
+</ul>
+
+<h3>Gameplay Controls</h3>
+<ul>
+    <li>Movement - If the player touches a point on the screen that does not have an enemy on it then they will move to that point</li>
+    <li>Attacking
+- If a player touches an enemy on the screen while they have a ranged
+weapon (or spell) equipped then they will fire in the direction of that
+enemy. If they do not have a ranged weapon they will move towards that
+enemy. If they are already next to the enemy and they have a melee
+weapon then they will attack.</li>
+    <li>Hold - There will be a
+button in the bottom left corner called the hold button. If the player
+is touching this button then it will prevent them from moving. Anywhere
+that they touch on the screen will result in them attacking in that
+direction instead of moving</li>
+    <li>Abilities - There will be
+about 6 - 10 slots somewhere on the screen where the user can attach
+fast actions. These can be spells, abilities, weapons, or consumable
+items. If the user taps a weapon or a ranged spell/ability then they
+will switch to that as their active attack. The next time they touch an
+enemy on the screen this is the attack that they will use. If they
+touch a consumable item they will use immediately. If they touch an
+"Instance use" spell or ability then it will be used at that moment. An
+example of this could be a super nova the hits everyone right around
+the player (thus the user doesn't need to select an enemy to use it on).</li>
+    <li>Life/Mana
+- On the side of the screen (left side?) there will be a vertical bar
+for life and verticle bar for health. If you double tap either of them
+it will automatically use the most appropriate potion for you.</li>
+    <li>Inventory
+- I am thinking there could be a stub on the side of the screen for the
+inventory. If you touch down on the stub and pan across the screen then
+it will pull open your inventory so that you can use it. You can close
+it in a similar fashion.</li>
+    <li>Pause - The hardware back button will cause the game to pause.</li>
+    <li>Minimap - Upper left corner? Transparent over the whole screen? Switch on and off via pause?</li>
+</ul>
+
+<h2>Player definition</h2>
+
+<h3>Stats</h3>
+
+<ul>
+    <li>There will be no concept of stats anymore. However, every level should increase your life, mana, damage</li>
+</ul>
+
+
+<h3>Abilities</h3>
+
+<ul>
+    <li>Fighter - increases attack speed and damage with melee weapons as you upgrade it</li>
+    <li>Archer - increases attack speed and damage with bows as you upgrade it</li>
+    <li>Fireball - basic fire ball projectile. When upgrade it explodes and does aoe damage where it hits</li>
+    <li>Icebolt - basic ice ball projectile. When upgraded it slows enemies more for longer</li>
+    <li>Lightning - basic lightning projectile. Travels through enemies hitting all of them in a row instead of collisioning</li>
+	<li>Nova - lightning AOE damage around the user. Increase range / damage with levels</li>
+	<li>Chain Lightning - lightning the bounces from enemy to enemy. Upgrades make it do more bounces</li>
+	<li>Mind Blast - AOE stun enemies around you. Levels increase stun length and range</li>
+	<li>Inferno - Sustained attack fire spell. As long as you hold down the location you continue to spray fire damaging enemies in front of you over time</li>
+	<li>War Cry - AOE fear to enemies near you causing them to run away for a period of time. Levels increase range and length of fear</li>
+	<li>Stomp - jump up and down knocking back enemies around you and stunning for a short period</li>
+	<li>Multishot - shoot more than one arrow at once. increased levels increases the number of arrows you shoot</li>
+	<li>Teleport - teleport your character a distance in a direction. levels increase range</li>
+</ul>
+
+<h4>Combat</h4>
+<ul>
+    <li>Melee -</li>
+    <li>Bow -</li>
+	<li>Magic -</li>
+</ul>
+
+
+<h2>Dungeons</h2>
+
+<h3>Dungeon Generation</h3>
+<p>Dungeons should be generated on the fly when the player reaches
+them. It would be good to have a couple different algorithms that will
+make dungeons with different feels. We can also get some different
+feels by having a few different tile sets that we can use.</p>
+
+<h2>NPC's</h2>
+<h3>Friendly</h3>
+
+<ul>
+    <li>Vendors</li>
+    <li>Quest Givers</li>
+</ul>
+
+<h3>Enemies</h3>
+
+<ul>
+    <li>Goblin - basic melee enemy</li>
+    <li>Goblin Mage - shoots fireballs from a range</li>
+	<li>Skeleton - melee, has high magic resistance</li>
+	<li>Skeleton Archer - ranged, has high magic resistance</li>
+	<li>Ghost - goes invisible occasionally, must damage it to make it visible for a time</li>
+	<li>Zombie - must be killed with fire damage or else it will come back to live with parital health</li>
+	<li>FireElemental - immune to fire damage, vulnerable to cold</li>
+	<li>Golumn - When killed it splits into smaller easier enemies</li>
+	<li>Dragon - End boss?</li>
+
+</ul>
+
+<h2>Item Generation</h2>
+
+<p>Items are defined in an xml file. However, we could generate variations on them by adding properties to them dynamically.</p>
+
+<h2>Quest Generation</h2>
+
+<p>Needs to be designed</p>
+
+<h2>Enemy Generation</h2>
+
+<p>None planned atm. Is out of scope.</p>
+
+<h2>Sprite Asset list</h2>
+
+<h3>Animated Sprites</h3>
+
+<ul>
+    <li>Player</li>
+    <li>Enemies</li>
+    <li>Spells</li>
+</ul>
+
+<h3>Static Sprites</h3>
+
+<ul>
+    <li>Items</li>
+</ul>
+
+<h3>Environment Tiles</h3>
+
+<ul>
+    <li>Dungeon</li>
+	<li>Mine</li>
+    <li>Cave</li>
+	<li>Crystal Cave</li>
+    <li>Volcano</li>
+</ul>
+
+</div>
+</body></html>

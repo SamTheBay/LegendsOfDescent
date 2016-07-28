@@ -1,0 +1,7 @@
+1. Copy the binarys produced from the build into the content directory fo the installer.
+
+2. Open the install project using Sharp Develop
+
+3. If you have added any new content then you will need to update the .wxs files and content folders for the project to inlcude the new files
+
+4. Build the project and you will get MSI

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Levels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Level Floor="0" Type="Town">
+    <TileSet Name="Town"/>
+    <OpeningText Name="Player" Text="... . ..   ...  .\n...Ugh, my head...\nWhere am I...\nWhat happened...my beautiful city has been destroyed! Has anyone else survived?\nQuentin must have made it, I'll find him first." />
+    <Enemies>
+        <Enemy Type="Goblin" Count="0" />
+    </Enemies>
+  </Level>
+
+  <Level Floor="1">
+    <TileSet Name="Sewer" />
+    <OpeningText Name="Player" Text="This place reeks of goblins. I best keep my eyes open for ambushes from these loathsome creatures." />
+    <Enemies>
+      <Enemy Type="Ogre" Count="100" />
+      <Enemy Type="Goblin" Count="100" />
+    </Enemies>
+  </Level>
+
+
+  <Level Floor="2">
+        <TileSet Name="RedSewer" />
+        <Enemies>
+            <Enemy Type="Ogre" Count="150" />
+            <Enemy Type="SkeletonArcher" Count="50" />
+        </Enemies>
+    </Level>
+
+    <Level Floor="3">
+        <TileSet Name="Sewer" />
+        <Enemies>
+            <Enemy Type="Ogre" Count="140" />
+            <Enemy Type="LavaTroll" Element="Fire" Count="60" />
+        </Enemies>
+    </Level>
+
+    <Level Floor="4">
+        <TileSet Name="RedSewer" />
+        <Enemies>
+            <Enemy Type="Goblin" Count="150" />
+            <Enemy Type="SkeletonArcher" Count="75" />
+        </Enemies>
+    </Level>
+  
+    <Level Floor="5" Type="Boss">
+      <TileSet Name="Sewer" />
+      <OpeningText Name="Dragnor" Text="I see that you have managed to catch up to me...\nThat is suprising, but no matter, I will quickly do away with with you now. You are no match for the power I have aquired!" />
+      <Enemies>
+          <Enemy Type="DwarfBoss" Count="1" />
+          <Enemy Type="SkeletonKnight" Count="0" />
+        </Enemies>
+    </Level>
+  
+    <Level Floor="6">
+      <TileSet Name="Cave" />
+      <OpeningText Name="Player" Text="Dragnor fled into the caves. I have no choice but to follow after him. I shall tread carefully however; creatures are lurking everywhere." />
+      <Enemies>
+          <Enemy Type="SkeletonKnight" Count="125" />
+          <Enemy Type="Ghost" Count="75" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="7">
+        <TileSet Name="Cave" />
+        <Enemies>
+            <Enemy Type="SkeletonKnight" Count="100" />
+            <Enemy Type="LavaTroll" Element="Lightning" Count="100" />
+        </Enemies>
+    </Level>
+
+    <Level Floor="8">
+        <TileSet Name="BrownCave" />
+        <Enemies>
+            <Enemy Type="SkeletonArcher" Count="100" />
+            <Enemy Type="Ghost" Count="100" />
+        </Enemies>
+    </Level>
+
+    <Level Floor="9">
+        <TileSet Name="DarkCave" />
+        <Enemies>
+            <Enemy Type="Ogre" Count="100" />
+            <Enemy Type="Ghost" Count="100" />
+        </Enemies>
+    </Level>
+
+  <Level Floor="10" Type="Boss">
+    <TileSet Name="DarkCave" />
+    <OpeningText Name="Dragnor" Text="I am glad that you are still alive you worm of a Dwarf...\nI am going to teach you a lesson for the last time that we met. You will learn that it is a bad idea to play games with me!" />
+    <Enemies>
+      <Enemy Type="DwarfBoss2" Count="1" />
+      <Enemy Type="SkeletonKnight" Count="0" />
+    </Enemies>
+  </Level>
+  
+    <Level Floor="11">
+      <TileSet Name="Crystal" />
+      <OpeningText Name="Player" Text="Dragnor is growing stronger by the day. I must move quickly through the crystal caves or else there will be no hope in stopping him." />
+      <Enemies>
+            <Enemy Type="LavaTroll" Element="Fire" Count="100" />
+            <Enemy Type="Goblin" Count="125" />
+        </Enemies>
+    </Level>
+
+    <Level Floor="12">
+        <TileSet Name="Crystal" />
+        <Enemies>
+            <Enemy Type="SkeletonArcher" Count="80" />
+            <Enemy Type="LavaTroll" Element="Poison" Count="120" />
+        </Enemies>
+    </Level>
+
+    <Level Floor="13">
+      <TileSet Name="PurpleCrystal" />
+      <Enemies>
+        <Enemy Type="Ghost" Count="100" />
+        <Enemy Type="LavaTroll" Element="Ice" Count="100" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="14">
+      <TileSet Name="DarkBlueCrystal" />
+      <Enemies>
+        <Enemy Type="Drake" Element="Fire" Count="60" />
+        <Enemy Type="Goblin" Count="150" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="15" Type="Boss">
+      <TileSet Name="DarkBlueCrystal" />
+      <OpeningText Name="Dragnor" Text="I am growing greater and more powerful even as we speak. The artifact has soaked deep into my soul and nothing will be able to stop me now. Not even you!" />
+      <Enemies>
+        <Enemy Type="DwarfBoss2" Count="1" />
+        <Enemy Type="SkeletonKnight" Count="0" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="16">
+      <TileSet Name="LavaCave" />
+      <OpeningText Name="Player" Text="Dragnor's corruption is complete. I'm not sure if anything can stop him now, but I must try! If he is preparing himself in the lava caves then I shall follow him into the deep!" />
+      <Enemies>
+        <Enemy Type="Drake" Element="Lightning" Count="100" />
+        <Enemy Type="Goblin" Count="150" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="17">
+      <TileSet Name="LavaCave" />
+      <Enemies>
+        <Enemy Type="Ghost" Count="100" />
+        <Enemy Type="Drake" Element="Ice" Count="100" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="18">
+      <TileSet Name="LavaCave" />
+      <Enemies>
+        <Enemy Type="SkeletonArcher" Count="100" />
+        <Enemy Type="Goblin" Count="150" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="19">
+      <TileSet Name="DarkLavaCave" />
+      <Enemies>
+        <Enemy Type="Drake" Element="Poison" Count="100" />
+        <Enemy Type="SkeletonKnight" Count="150" />
+      </Enemies>
+    </Level>
+
+    <Level Floor="20" Type="Boss">
+      <TileSet Name="DarkLavaCave" />
+      <OpeningText Name="Dragnor" Text="This is the end. You are no match for what I have become. I am more powerful than any living thing and I will watch you die slowly and painfully beneath my wrath. Come get your just deserves foolish dwarf!" />
+      <Enemies>
+        <Enemy Type="DwarfBoss3" Count="1" />
+        <Enemy Type="SkeletonKnight" Count="0" />
+      </Enemies>
+    </Level>
+  
+</Levels>

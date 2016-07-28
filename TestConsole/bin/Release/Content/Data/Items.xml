@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Usable>
+    <Item Name="Warp Scroll" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="101" ValueAdjust="1" Description="A scroll imbuned with the power to bend space">
+      <Duration>0</Duration>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="101" />
+      <MaxGroup>1</MaxGroup>
+    </Item>
+    <Item Name="Health Potion" Level="1" Texture="RedPotions" FramesPerRow="5" Frame="3" ValueAdjust="1" Description="A magical salve that causes the physical body to rejuvinate">
+      <Duration>0</Duration>
+      <Icon Texture="RedPotions" FramesPerRow="5" Frame="3" />
+      <Modifier Stat="Health" Amount="70" />
+    </Item>
+    <Item Name="Mana Potion" Level="1" Texture="BluePotions" FramesPerRow="5" Frame="3" ValueAdjust="1" Description="A formula that restores magical power">
+      <Duration>0</Duration>
+      <Icon Texture="BluePotions" FramesPerRow="5" Frame="3" />
+      <Modifier Stat="Mana" Amount="50" />
+    </Item>
+    <Item Name="Speed Potion" Level="1" Texture="GreenPotions" FramesPerRow="5" Frame="0" ValueAdjust="2" Description="Said to be drawn from the heel of Achilles himself">
+      <Duration>30000</Duration>
+      <Icon Texture="GreenPotions" FramesPerRow="5" Frame="0" />
+      <Modifier Stat="MoveSpeed" Amount="10" />
+      <MaxGroup>6</MaxGroup>
+    </Item>
+    <Item Name="Strength Potion" Level="1" Texture="OrangePotions" FramesPerRow="5" Frame="0" ValueAdjust="2" Description="Derived from the blood of a cave troll">
+      <Duration>30000</Duration>
+      <Icon Texture="OrangePotions" FramesPerRow="5" Frame="0" />
+      <Modifier Stat="Damage" Amount="5" />
+    </Item>
+    <Item Name="Growth Potion" Level="1" Texture="PurplePotions" FramesPerRow="5" Frame="0" ValueAdjust="2" Description="Bubbles as if it is ready to burst free">
+      <Duration>30000</Duration>
+      <Icon Texture="PurplePotions" FramesPerRow="5" Frame="0" />
+      <Modifier Stat="HealthRegen" Amount="5" />
+      <Modifier Stat="ManaRegen" Amount="4" />
+    </Item>
+    <Item Name="Swift Potion" Level="1" Texture="YellowPotions" FramesPerRow="5" Frame="0" ValueAdjust="2" Description="Carefully perfected for the deft handed">
+      <Duration>30000</Duration>
+      <Icon Texture="YellowPotions" FramesPerRow="5" Frame="0" />
+      <Modifier Stat="AttackSpeed" Amount="8" />
+      <MaxGroup>6</MaxGroup>
+    </Item>
+    <Item Name="Stone Skin Potion" Level="1" Texture="BlackPotions" FramesPerRow="5" Frame="0" ValueAdjust="2" Description="Tastes horibble but makes your skin as strong as stone">
+      <Duration>30000</Duration>
+      <Icon Texture="BlackPotions" FramesPerRow="5" Frame="0" />
+      <Modifier Stat="Armor" Amount="20" />
+    </Item>
+    <Item Name="Resistance Potion" Level="1" Texture="MagentaPotions" FramesPerRow="5" Frame="0" ValueAdjust="2" Description="Glows brightly and even has a faint hum">
+      <Duration>30000</Duration>
+      <Icon Texture="MagentaPotions" FramesPerRow="5" Frame="0" />
+      <Modifier Stat="MagicResistance" Amount="10" />
+      <MaxGroup>6</MaxGroup>
+    </Item>
+  </Usable>
+  <Equipable>
+    
+    <!-- Wands -->
+    <Item Name="Wand" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="9" ValueAdjust="1" MinLevel="1" MaxLevel="6" Description="Reduces the cost of casting spells">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="9" />
+      <Modifier Stat="Damage" Amount="15" />
+      <Modifier Stat="SpellDamage" Amount="15" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Tribal Wand" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="69" ValueAdjust="2.2" MinLevel="4" MaxLevel="14" Description="Reduces the cost of casting spells">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="69" />
+      <Modifier Stat="Damage" Amount="20" />
+      <Modifier Stat="SpellDamage" Amount="20" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Bone Wand" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="65" ValueAdjust="3.4" MinLevel="9" MaxLevel="14" Description="Reduces the cost of casting spells">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="65" />
+      <Modifier Stat="Damage" Amount="25" />
+      <Modifier Stat="SpellDamage" Amount="25" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Dragon Wand" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="58" ValueAdjust="4.3" MinLevel="15" MaxLevel="999" Description="Reduces the cost of casting spells">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="58" />
+      <Modifier Stat="Damage" Amount="30" />
+      <Modifier Stat="SpellDamage" Amount="30" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Skull Wand" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="77" ValueAdjust="6.3" MinLevel="20" MaxLevel="999" Description="Reduces the cost of casting spells">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="77" />
+      <Modifier Stat="Damage" Amount="35" />
+      <Modifier Stat="SpellDamage" Amount="35" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    
+    <!-- Staffs -->
+    <Item Name="Staff" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="16" ValueAdjust="1" MinLevel="1" MaxLevel="6" Description="Reduces the cost of casting spells">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="16" />
+      <Modifier Stat="Damage" Amount="50" />
+      <Modifier Stat="SpellDamage" Amount="30" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+    </Item>
+    <Item Name="Tribal Staff" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="62" ValueAdjust="2.7" MinLevel="5" MaxLevel="12" Description="Reduces the cost of casting spells">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="62" />
+      <Modifier Stat="Damage" Amount="70" />
+      <Modifier Stat="SpellDamage" Amount="40" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+    </Item>
+    <Item Name="Wizard Staff" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="33" ValueAdjust="3.7" MinLevel="9" MaxLevel="999" Description="Reduces the cost of casting spells">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="33" />
+      <Modifier Stat="Damage" Amount="80" />
+      <Modifier Stat="SpellDamage" Amount="50" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+    </Item>
+    <Item Name="Heavenly Staff" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="54" ValueAdjust="4.7" MinLevel="14" MaxLevel="999" Description="Reduces the mana cost of casting spells">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="54" />
+      <Modifier Stat="Damage" Amount="100" />
+      <Modifier Stat="SpellDamage" Amount="60" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+    </Item>
+    <Item Name="Elemental Staff" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="68" ValueAdjust="5.7" MinLevel="20" MaxLevel="999" Description="Reduces the mana cost of casting spells">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="68" />
+      <Modifier Stat="Damage" Amount="110" />
+      <Modifier Stat="SpellDamage" Amount="70" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+    </Item>
+    
+    
+    
+    <!-- One Hand -->
+    <Item Name="Dagger" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="13" ValueAdjust=".65" MinLevel="1" MaxLevel="6">
+      <Slot>Hand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="13" />
+      <Modifier Stat="Damage" Amount="60" />
+      <Modifier Stat="BaseAttackSpeed" Amount="30" />
+    </Item>
+    <Item Name="Sword" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="14" ValueAdjust="1" MinLevel="1" MaxLevel="6">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="14" />
+      <Modifier Stat="Damage" Amount="100" />
+    </Item>
+    <Item Name="Axe" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="12" ValueAdjust="1.1" MinLevel="1" MaxLevel="6">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="12" />
+      <Modifier Stat="Damage" Amount="100" />
+    </Item>
+    <Item Name="Falchion" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="31" ValueAdjust="2.5" MinLevel="3" MaxLevel="8">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="31" />
+      <Modifier Stat="Damage" Amount="110" />
+    </Item>
+    <Item Name="Rogue Spike" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="32" ValueAdjust="2.4" MinLevel="4" MaxLevel="9">
+      <Slot>Hand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="32" />
+      <Modifier Stat="Damage" Amount="80" />
+      <Modifier Stat="BaseAttackSpeed" Amount="30" />
+    </Item>
+    <Item Name="Sabre" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="30" ValueAdjust="2.6" MinLevel="5" MaxLevel="10">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="30" />
+      <Modifier Stat="Damage" Amount="100" />
+      <Modifier Stat="BaseAttackSpeed" Amount="10" />
+    </Item>
+    <Item Name="Scimitar" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="70" ValueAdjust="2.9" MinLevel="8" MaxLevel="10">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="70" />
+      <Modifier Stat="Damage" Amount="120" />
+    </Item>
+    <Item Name="Dread Cleaver" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="35" ValueAdjust="3.8" MinLevel="10" MaxLevel="999">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="35" />
+      <Modifier Stat="Damage" Amount="135" />
+    </Item>
+    <Item Name="Razor Edge" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="36" ValueAdjust="3.4" MinLevel="9" MaxLevel="999">
+      <Slot>Hand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="36" />
+      <Modifier Stat="Damage" Amount="90" />
+      <Modifier Stat="BaseAttackSpeed" Amount="30" />
+    </Item>
+    <Item Name="Heavenly Sword" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="57" ValueAdjust="5.5" MinLevel="15" MaxLevel="999">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="57" />
+      <Modifier Stat="Damage" Amount="140" />
+      <Modifier Stat="BaseAttackSpeed" Amount="10" />
+    </Item>
+    <Item Name="Dwarven Broadsword" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="67" ValueAdjust="5.4" MinLevel="15" MaxLevel="999">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="67" />
+      <Modifier Stat="Damage" Amount="180" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+    </Item>
+    <Item Name="Dread Hatchet" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="78" ValueAdjust="5.7" MinLevel="15" MaxLevel="999">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="78" />
+      <Modifier Stat="Damage" Amount="155" />
+    </Item>
+
+    
+    
+    
+    <!-- Two Hand-->
+    <Item Name="Claymore" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="15" ValueAdjust="1.2" MinLevel="1" MaxLevel="6">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="15" />
+      <Modifier Stat="Damage" Amount="150" />
+      <Modifier Stat="BaseAttackSpeed" Amount="0" />
+    </Item>
+    <Item Name="Mace" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="19" ValueAdjust="1.3" MinLevel="1" MaxLevel="6">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="19" />
+      <Modifier Stat="Damage" Amount="160" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="War Hammer" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="18" ValueAdjust="1.5" MinLevel="1" MaxLevel="6">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="18" />
+      <Modifier Stat="Damage" Amount="200" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-30" />
+    </Item>
+    <Item Name="Flanged Mace" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="59" ValueAdjust="2.8" MinLevel="4" MaxLevel="12">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="59" />
+      <Modifier Stat="Damage" Amount="200" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+    </Item>
+    <Item Name="Spear" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="44" ValueAdjust="2.8" MinLevel="6" MaxLevel="12">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="44" />
+      <Modifier Stat="Damage" Amount="200" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="Trident" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="63" ValueAdjust="3.7" MinLevel="8" MaxLevel="15">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="63" />
+      <Modifier Stat="Damage" Amount="230" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="Barbarian Sword" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="34" ValueAdjust="3.5" MinLevel="10" MaxLevel="999">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="34" />
+      <Modifier Stat="Damage" Amount="220" />
+    </Item>
+    <Item Name="Haliberd" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="64" ValueAdjust="5.6" MinLevel="13" MaxLevel="999">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="64" />
+      <Modifier Stat="Damage" Amount="300" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+    </Item>
+    <Item Name="Doom Axe" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="45" ValueAdjust="5.8" MinLevel="15" MaxLevel="999">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="45" />
+      <Modifier Stat="Damage" Amount="350" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-30" />
+    </Item>
+    <Item Name="Holy Hammer" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="79" ValueAdjust="5.7" MinLevel="15" MaxLevel="999">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="79" />
+      <Modifier Stat="Damage" Amount="300" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    
+    <!-- Wizard Armor -->
+    <Item Name="Wizard Robe" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="46" ValueAdjust="1.2" MinLevel="3" MaxLevel="999" Description="Cloth armor has added bonuses for mages">
+      <Slot>Chest</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="46" />
+      <Modifier Stat="Armor" Amount="50" />
+      <Modifier Stat="ManaRegen" Amount="30" />
+    </Item>
+    <Item Name="Wizard Pants" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="42" ValueAdjust="1" MinLevel="3" MaxLevel="999" Description="Cloth armor has added bonuses for mages">
+      <Slot>Legs</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="42" />
+      <Modifier Stat="Armor" Amount="50" />
+      <Modifier Stat="ManaRegen" Amount="30" />
+    </Item>
+    <Item Name="Wizard Hat" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="41" ValueAdjust=".8" MinLevel="3" MaxLevel="999" Description="Cloth armor has added bonuses for mages">
+      <Slot>Head</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="41" />
+      <Modifier Stat="Armor" Amount="50" />
+      <Modifier Stat="ManaRegen" Amount="30" />
+    </Item>
+    <Item Name="Warlock Turban" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="48" ValueAdjust="3.2" MinLevel="8" MaxLevel="999" Description="Cloth armor has added bonuses for mages">
+      <Slot>Head</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="48" />
+      <Modifier Stat="Armor" Amount="90" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+    </Item>
+    <Item Name="Warlock Pants" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="50" ValueAdjust="3" MinLevel="8" MaxLevel="999" Description="Cloth armor has added bonuses for mages">
+      <Slot>Legs</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="50" />
+      <Modifier Stat="Armor" Amount="90" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+    </Item>
+    <Item Name="Warlock Robe" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="49" ValueAdjust="3.8" MinLevel="8" MaxLevel="999" Description="Cloth armor has added bonuses for mages">
+      <Slot>Chest</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="49" />
+      <Modifier Stat="Armor" Amount="90" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+    </Item>
+    <Item Name="Cowl" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="40" ValueAdjust=".7" MinLevel="1" MaxLevel="6" Description="Cloth armor has added bonuses for mages">
+      <Slot>Head</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="40" />
+      <Modifier Stat="Armor" Amount="50" />
+      <Modifier Stat="ManaRegen" Amount="20" />
+    </Item>
+    
+    <!-- Leather Armor -->
+    <Item Name="Leather Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="20" ValueAdjust="1.2" MinLevel="1" MaxLevel="6" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Chest</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="20" />
+      <Modifier Stat="Armor" Amount="70" />
+    </Item>
+    <Item Name="Leather Pants" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="21" ValueAdjust="1" MinLevel="1" MaxLevel="6" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Legs</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="21" />
+      <Modifier Stat="Armor" Amount="70" />
+    </Item>
+    <Item Name="Leather Hat" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="26" ValueAdjust=".8" MinLevel="1" MaxLevel="6" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Head</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="26" />
+      <Modifier Stat="Armor" Amount="70" />
+    </Item>
+    <Item Name="Tribal Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="25" ValueAdjust="2.8" MinLevel="5" MaxLevel="13" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Chest</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="25" />
+      <Modifier Stat="Armor" Amount="100" />
+    </Item>
+    <Item Name="Tribal Pants" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="24" ValueAdjust="2.3" MinLevel="5" MaxLevel="13" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Legs</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="24" />
+      <Modifier Stat="Armor" Amount="100" />
+    </Item>
+    <Item Name="Tribal Hat" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="23" ValueAdjust="2" MinLevel="5" MaxLevel="13" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Head</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="23" />
+      <Modifier Stat="Armor" Amount="100" />
+    </Item>
+    <Item Name="Rogue Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="80" ValueAdjust="3.8" MinLevel="11" MaxLevel="999" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Chest</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="80" />
+      <Modifier Stat="Armor" Amount="160" />
+    </Item>
+    <Item Name="Rogue Pants" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="84" ValueAdjust="3.5" MinLevel="11" MaxLevel="999" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Legs</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="84" />
+      <Modifier Stat="Armor" Amount="160" />
+    </Item>
+    <Item Name="Rogue Hat" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="76" ValueAdjust="3" MinLevel="11" MaxLevel="999" Description="Leather is light and easy to move with no negative effects">
+      <Slot>Head</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="76" />
+      <Modifier Stat="Armor" Amount="160" />
+    </Item>
+    
+    
+    <!-- Mail Armor -->
+    <Item Name="Chainmail Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="3" ValueAdjust="1.5" MinLevel="1" MaxLevel="7" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Chest</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="3" />
+      <Modifier Stat="Armor" Amount="120" />
+      <Modifier Stat="BaseCastSpeed" Amount="-10" />
+      <Modifier Stat="BaseManaCost" Amount="8" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-5" />
+    </Item>
+    <Item Name="Chainmail Legs" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="4" ValueAdjust="1.3" MinLevel="1" MaxLevel="7" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Legs</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="4" />
+      <Modifier Stat="Armor" Amount="120" />
+      <Modifier Stat="BaseCastSpeed" Amount="-7" />
+      <Modifier Stat="BaseManaCost" Amount="5" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-3" />
+    </Item>
+    <Item Name="Chainmail Helmet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="2" ValueAdjust="1" MinLevel="1" MaxLevel="7" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Head</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="2" />
+      <Modifier Stat="Armor" Amount="120" />
+      <Modifier Stat="BaseCastSpeed" Amount="-3" />
+      <Modifier Stat="BaseManaCost" Amount="2" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-2" />
+    </Item>
+    <Item Name="Scalemail Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="38" ValueAdjust="3.5" MinLevel="7" MaxLevel="15" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Chest</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="38" />
+      <Modifier Stat="Armor" Amount="160" />
+      <Modifier Stat="BaseCastSpeed" Amount="-10" />
+      <Modifier Stat="BaseManaCost" Amount="8" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-5" />
+    </Item>
+    <Item Name="Scalemail Legs" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="39" ValueAdjust="3.3" MinLevel="7" MaxLevel="15" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Legs</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="39" />
+      <Modifier Stat="Armor" Amount="160" />
+      <Modifier Stat="BaseCastSpeed" Amount="-7" />
+      <Modifier Stat="BaseManaCost" Amount="5" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-3" />
+    </Item>
+    <Item Name="Scalemail Helmet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="37" ValueAdjust="3" MinLevel="7" MaxLevel="15" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Head</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="37" />
+      <Modifier Stat="Armor" Amount="160" />
+      <Modifier Stat="BaseCastSpeed" Amount="-3" />
+      <Modifier Stat="BaseManaCost" Amount="2" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-2" />
+    </Item>
+    <Item Name="Holymail Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="82" ValueAdjust="4.5" MinLevel="13" MaxLevel="999" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Chest</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="82" />
+      <Modifier Stat="Armor" Amount="200" />
+      <Modifier Stat="BaseCastSpeed" Amount="-10" />
+      <Modifier Stat="BaseManaCost" Amount="8" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-5" />
+    </Item>
+    <Item Name="Holymail Legs" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="83" ValueAdjust="4.3" MinLevel="13" MaxLevel="999" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Legs</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="83" />
+      <Modifier Stat="Armor" Amount="200" />
+      <Modifier Stat="BaseCastSpeed" Amount="-7" />
+      <Modifier Stat="BaseManaCost" Amount="5" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-3" />
+    </Item>
+    <Item Name="Holymail Crown" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="81" ValueAdjust="4" MinLevel="13" MaxLevel="999" Description="Mail is somewhat cumbersome reducing your effectiveness with bows and spells">
+      <Slot>Head</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="81" />
+      <Modifier Stat="Armor" Amount="200" />
+      <Modifier Stat="BaseCastSpeed" Amount="-3" />
+      <Modifier Stat="BaseManaCost" Amount="2" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-2" />
+    </Item>
+    
+    <!-- Plate Armor -->
+    <Item Name="Plate Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="6" ValueAdjust="2" MinLevel="4" MaxLevel="10" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Chest</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="6" />
+      <Modifier Stat="Armor" Amount="160" />
+      <Modifier Stat="BaseCastSpeed" Amount="-25" />
+      <Modifier Stat="BaseManaCost" Amount="13" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-12" />
+    </Item>
+    <Item Name="Plate Legs" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="7" ValueAdjust="1.5" MinLevel="4" MaxLevel="10" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Legs</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="7" />
+      <Modifier Stat="Armor" Amount="160" />
+      <Modifier Stat="BaseCastSpeed" Amount="-20" />
+      <Modifier Stat="BaseManaCost" Amount="7" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-8" />
+    </Item>
+    <Item Name="Plate Helmet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="5" ValueAdjust="1.1" MinLevel="4" MaxLevel="10" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Head</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="5" />
+      <Modifier Stat="Armor" Amount="160" />
+      <Modifier Stat="BaseCastSpeed" Amount="-15" />
+      <Modifier Stat="BaseManaCost" Amount="5" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-5" />
+    </Item>
+    <Item Name="Dread Plate Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="29" ValueAdjust="4" MinLevel="9" MaxLevel="17" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Chest</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="29" />
+      <Modifier Stat="Armor" Amount="200" />
+      <Modifier Stat="BaseCastSpeed" Amount="-25" />
+      <Modifier Stat="BaseManaCost" Amount="15" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-12" />
+    </Item>
+    <Item Name="Dread Plate Legs" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="28" ValueAdjust="4.5" MinLevel="9" MaxLevel="17" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Legs</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="28" />
+      <Modifier Stat="Armor" Amount="200" />
+      <Modifier Stat="BaseCastSpeed" Amount="-20" />
+      <Modifier Stat="BaseManaCost" Amount="10" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-8" />
+    </Item>
+    <Item Name="Dread Plate Helmet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="27" ValueAdjust="4.1" MinLevel="9" MaxLevel="17" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Head</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="27" />
+      <Modifier Stat="Armor" Amount="200" />
+      <Modifier Stat="BaseCastSpeed" Amount="-15" />
+      <Modifier Stat="BaseManaCost" Amount="5" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-8" />
+    </Item>
+    <Item Name="Dwarven Plate Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="52" ValueAdjust="5" MinLevel="15" MaxLevel="999" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Chest</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="52" />
+      <Modifier Stat="Armor" Amount="240" />
+      <Modifier Stat="BaseCastSpeed" Amount="-25" />
+      <Modifier Stat="BaseManaCost" Amount="15" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-12" />
+    </Item>
+    <Item Name="Dwarven Plate Legs" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="51" ValueAdjust="5.5" MinLevel="15" MaxLevel="999" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Legs</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="51" />
+      <Modifier Stat="Armor" Amount="240" />
+      <Modifier Stat="BaseCastSpeed" Amount="-20" />
+      <Modifier Stat="BaseManaCost" Amount="10" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-8" />
+    </Item>
+    <Item Name="Dwarven Plate Helmet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="53" ValueAdjust="5.1" MinLevel="15" MaxLevel="999" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Head</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="53" />
+      <Modifier Stat="Armor" Amount="240" />
+      <Modifier Stat="BaseCastSpeed" Amount="-15" />
+      <Modifier Stat="BaseManaCost" Amount="5" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-5" />
+    </Item>
+    <Item Name="Skull Plate Armor" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="47" ValueAdjust="6" MinLevel="19" MaxLevel="999" Description="Plate is very cumbersome reducing your effectiveness with bows and spells significantly">
+      <Slot>Chest</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="47" />
+      <Modifier Stat="Armor" Amount="300" />
+      <Modifier Stat="BaseCastSpeed" Amount="-50" />
+      <Modifier Stat="BaseManaCost" Amount="25" />
+      <Modifier Stat="BaseRangedAttackSpeed" Amount="-12" />
+    </Item>
+    
+    <!-- Bows -->
+    <Item Name="Short Bow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="17" ValueAdjust=".9" MinLevel="1" MaxLevel="7">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="17" />
+      <Modifier Stat="Damage" Amount="80" />
+    </Item>
+    <Item Name="Long Bow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="1" ValueAdjust="1.1" MinLevel="1" MaxLevel="7">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="1" />
+      <Modifier Stat="Damage" Amount="90" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="Crossbow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="0" ValueAdjust="1.3" MinLevel="3" MaxLevel="9">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="0" />
+      <Modifier Stat="Damage" Amount="100" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+    </Item>
+    <Item Name="Heavy Crossbow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="56" ValueAdjust="2.3" MinLevel="7" MaxLevel="17">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="56" />
+      <Modifier Stat="Damage" Amount="150" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+    </Item>
+    <Item Name="Gnarled Bow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="43" ValueAdjust="2.2" MinLevel="5" MaxLevel="10">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="43" />
+      <Modifier Stat="Damage" Amount="120" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="Heavenly Bow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="55" ValueAdjust="3.3" MinLevel="8" MaxLevel="15">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="55" />
+      <Modifier Stat="Damage" Amount="130" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="Elven Bow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="61" ValueAdjust="4.3" MinLevel="11" MaxLevel="999">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="61" />
+      <Modifier Stat="Damage" Amount="140" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="Dark Bow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="66" ValueAdjust="5.3" MinLevel="15" MaxLevel="999">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="66" />
+      <Modifier Stat="Damage" Amount="150" />
+    </Item>
+    <Item Name="Dark Crossbow" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="85" ValueAdjust="5.5" MinLevel="15" MaxLevel="999">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="85" />
+      <Modifier Stat="Damage" Amount="190" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+    </Item>
+    
+    <!-- Augments -->
+    <Item Name="Ring" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="8" ValueAdjust="2" MinLevel="1" MaxLevel="7">
+      <Slot>Augment</Slot>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="8" />
+    </Item>
+    <Item Name="Ring" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="71" ValueAdjust="2" MinLevel="5" MaxLevel="999">
+      <Slot>Augment</Slot>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="71" />
+    </Item>
+    <Item Name="Ring" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="72" ValueAdjust="2" MinLevel="10" MaxLevel="999">
+      <Slot>Augment</Slot>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="72" />
+    </Item>
+    <Item Name="Amulet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="22" ValueAdjust="2" MinLevel="1" MaxLevel="7">
+      <Slot>Augment</Slot>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="22" />
+    </Item>
+    <Item Name="Amulet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="73" ValueAdjust="2" MinLevel="1" MaxLevel="7">
+      <Slot>Augment</Slot>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="73" />
+    </Item>
+    <Item Name="Amulet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="74" ValueAdjust="2" MinLevel="5" MaxLevel="999">
+      <Slot>Augment</Slot>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="74" />
+    </Item>
+    <Item Name="Amulet" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="75" ValueAdjust="2" MinLevel="10" MaxLevel="999">
+      <Slot>Augment</Slot>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="75" />
+    </Item>
+    
+    
+    <!-- Tomes -->
+    <Item Name="Tome" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="60" ValueAdjust="2" MinLevel="1" MaxLevel="10" Description="Reduces the cost of casting spells">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="60" />
+      <Modifier Stat="SpellDamage" Amount="15" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Dark Tome" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="91" ValueAdjust="3" MinLevel="5" MaxLevel="15" Description="Reduces the cost of casting spells">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="91" />
+      <Modifier Stat="SpellDamage" Amount="20" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Ancient Tome" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="92" ValueAdjust="4" MinLevel="10" MaxLevel="999" Description="Reduces the cost of casting spells">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="92" />
+      <Modifier Stat="SpellDamage" Amount="25" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Runic Tome" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="93" ValueAdjust="5" MinLevel="15" MaxLevel="999" Description="Reduces the cost of casting spells">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="93" />
+      <Modifier Stat="SpellDamage" Amount="30" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    
+    
+    <!-- Shields -->
+    <Item Name="Small Shield" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="86" ValueAdjust="2" MinLevel="1" MaxLevel="10">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="86" />
+      <Modifier Stat="Armor" Amount="120" />
+    </Item>
+    <Item Name="Iron Shield" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="87" ValueAdjust="3" MinLevel="5" MaxLevel="15">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="87" />
+      <Modifier Stat="Armor" Amount="160" />
+    </Item>
+    <Item Name="Steel Shield" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="88" ValueAdjust="4" MinLevel="10" MaxLevel="20">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="88" />
+      <Modifier Stat="Armor" Amount="200" />
+    </Item>
+    <Item Name="Dwarven Shield" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="89" ValueAdjust="5" MinLevel="15" MaxLevel="999">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="89" />
+      <Modifier Stat="Armor" Amount="240" />
+    </Item>
+    <Item Name="Dragon Shield" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="90" ValueAdjust="6" MinLevel="20" MaxLevel="999">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="90" />
+      <Modifier Stat="Armor" Amount="280" />
+    </Item>
+
+
+  </Equipable>
+</Items>

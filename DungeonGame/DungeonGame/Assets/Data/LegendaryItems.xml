@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Equipable>
+
+    <!-- Legendary items are defined in this file. They are uniquely named items with unique statistics that
+     are extremely rare in the game. Generally only gotten through boss kills. -->
+
+    <!-- Wands -->
+    <Item Name="Sparkler" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="9" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="It pops and crackles as if it is bursting with energy">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="9" />
+      <Particle ParticleType="Starburst" ParticleColor="255;229;0" />
+      <Modifier Stat="Damage" Amount="35" />
+      <Modifier Stat="SpellDamage" Amount="45" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+      <Modifier Stat="HealthRegen" Amount="40" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+      <Modifier Stat="Health" Amount="20" />
+      <Modifier Stat="Mana" Amount="20" />
+    </Item>
+    <Item Name="Treasure Gleam" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="69" ValueAdjust="200" MinLevel="1" MaxLevel="14" Description="The riches of kings are not far from your grasp">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="69" />
+      <Particle ParticleType="Starburst" ParticleColor="255;197;38" />
+      <Modifier Stat="Damage" Amount="30" />
+      <Modifier Stat="SpellDamage" Amount="30" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+      <Modifier Stat="GoldDrop" Amount="100" />
+      <Modifier Stat="MagicDrop" Amount="60" />
+    </Item>
+    <Item Name="Witch Doctor's Twig" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="65" ValueAdjust="200" MinLevel="1" MaxLevel="14" Description="This twig harnesses the powers of the dark arts">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="65" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="100;17;355" />
+      <Modifier Stat="Damage" Amount="35" />
+      <Modifier Stat="SpellDamage" Amount="45" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+      <Modifier Stat="MagicResistance" Amount="30" />
+      <Modifier Stat="HealthRegen" Amount="40" />
+      <Modifier Stat="CastSpeed" Amount="10" />
+    </Item>
+    <Item Name="Dragon's Call" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="58" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="Imbued with the magical swiftness of a dragon">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="58" />
+      <Particle ParticleType="Glow" ParticleColor="0;255;0" />
+      <Modifier Stat="Damage" Amount="45" />
+      <Modifier Stat="SpellDamage" Amount="45" />
+      <Modifier Stat="CastSpeed" Amount="35" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Death Clasp" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="77" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="Enchanted by death himself">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="77" />
+      <Particle ParticleType="Glow" ParticleColor="120;120;120" />
+      <Modifier Stat="Damage" Amount="40" />
+      <Modifier Stat="SpellDamage" Amount="50" />
+      <Modifier Stat="CastSpeed" Amount="10" />
+      <Modifier Stat="LifeSteal" Amount="20" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+    <Item Name="Wizard's Emnity" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="32" ValueAdjust="200" MinLevel="1" MaxLevel="9" Description="A blade more suited for users of the deep arts than for a warrior">
+      <Slot>MainHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Particle ParticleType="Glow" ParticleColor="0;255;158" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="32" />
+      <Modifier Stat="Damage" Amount="50" />
+      <Modifier Stat="BaseAttackSpeed" Amount="30" />
+      <Modifier Stat="SpellDamage" Amount="50" />
+      <Modifier Stat="CastSpeed" Amount="10" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+    </Item>
+
+    
+    <!-- Staff -->
+    <Item Name="Ancient's Branch" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="16" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="Said to be crafted from a branch of the world tree">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="16" />
+      <Particle ParticleType="Glow" ParticleColor="0;255;0" />
+      <Modifier Stat="Damage" Amount="70" />
+      <Modifier Stat="SpellDamage" Amount="70" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+      <Modifier Stat="MagicResistance" Amount="30" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+      <Modifier Stat="CastSpeed" Amount="10" />
+    </Item>
+    <Item Name="Black Wrought" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="62" ValueAdjust="200" MinLevel="1" MaxLevel="12" Description="The depth of its darkness is captivating yet frightening">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="62" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="70;70;70" />
+      <Modifier Stat="Damage" Amount="70" />
+      <Modifier Stat="SpellDamage" Amount="70" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+      <Modifier Stat="CastSpeed" Amount="40" />
+      <Modifier Stat="ManaRegen" Amount="30" />
+      <Modifier Stat="StunChance" Amount="15" />
+    </Item>
+    <Item Name="Malevolence" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="33" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="No create of the world shall stand before its power">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="33" />
+      <Particle ParticleType="Starburst" ParticleColor="255;0;0" />
+      <Modifier Stat="Damage" Amount="80" />
+      <Modifier Stat="SpellDamage" Amount="90" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+      <Modifier Stat="MagicResistance" Amount="10" />
+      <Modifier Stat="ManaSteal" Amount="20" />
+      <Modifier Stat="MoveSpeed" Amount="15" />
+    </Item>
+    <Item Name="Heaven's Righteousness" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="54" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="A protector to those in dark places">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="54" />
+      <Particle ParticleType="Starburst" ParticleColor="255;255;255" />
+      <Modifier Stat="Damage" Amount="100" />
+      <Modifier Stat="SpellDamage" Amount="80" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+      <Modifier Stat="HealthRegen" Amount="40" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+      <Modifier Stat="Health" Amount="20" />
+      <Modifier Stat="Mana" Amount="20" />
+    </Item>
+    <Item Name="Illusion Maker" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="68" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="Drives fear to the point of madness into those who come upon it">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="68" />
+      <Particle ParticleType="Glow" ParticleColor="131;0;255" />
+      <Modifier Stat="Damage" Amount="110" />
+      <Modifier Stat="SpellDamage" Amount="85" />
+      <Modifier Stat="BaseManaCost" Amount="-30" />
+      <Modifier Stat="FearChance" Amount="100" />
+      <Modifier Stat="ReflectDamage" Amount="20" />
+    </Item>
+
+    
+    
+    <!-- Tomes -->
+    <Item Name="Defenders Saga" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="60" ValueAdjust="200" MinLevel="1" MaxLevel="10" Description="A tale of heroes who rise to the defense of the weak">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="60" />
+      <Particle ParticleType="Starburst" ParticleColor="100;100;100" />
+      <Modifier Stat="SpellDamage" Amount="35" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+      <Modifier Stat="Armor" Amount="100" />
+      <Modifier Stat="ReflectDamage" Amount="10" />
+    </Item>
+    <Item Name="Volume of the Depths" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="91" ValueAdjust="200" MinLevel="5" MaxLevel="15" Description="The dwarves have always found power in the depths of the earth">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="91" />
+      <Particle ParticleType="Starburst" ParticleColor="255;67;0" />
+      <Modifier Stat="SpellDamage" Amount="35" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+      <Modifier Stat="ManaSteal" Amount="20" />
+      <Modifier Stat="LifeSteal" Amount="10" />
+      <Modifier Stat="Mana" Amount="30" />
+    </Item>
+    <Item Name="Kings Opus" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="92" ValueAdjust="200" MinLevel="10" MaxLevel="999" Description="Knowledge will give you victory over your enemies">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="92" />
+      <Particle ParticleType="Starburst" ParticleColor="174;0;255" />
+      <Modifier Stat="SpellDamage" Amount="45" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+      <Modifier Stat="CastSpeed" Amount="20" />
+    </Item>
+    <Item Name="Lexicon of Legends" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="93" ValueAdjust="200" MinLevel="15" MaxLevel="999" Description="The power of those who came before you is yours to wield">
+      <Slot>OffHand</Slot>
+      <MerchantType>Mage</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="93" />
+      <Particle ParticleType="Starburst" ParticleColor="174;255;0" />
+      <Modifier Stat="SpellDamage" Amount="40" />
+      <Modifier Stat="BaseManaCost" Amount="-15" />
+      <Modifier Stat="MagicResistance" Amount="30" />
+      <Modifier Stat="HealthRegen" Amount="40" />
+    </Item>
+
+
+
+    <!-- One Hand -->
+    <Item Name="Pixypoint" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="13" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="With great speed even the largest of foes become easy to dispose of">
+      <Slot>Hand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="13" />
+      <Particle ParticleType="Glow" ParticleColor="255;255;0" />
+      <Modifier Stat="Damage" Amount="120" />
+      <Modifier Stat="BleedDamage" Amount="20" />
+      <Modifier Stat="BaseAttackSpeed" Amount="60" />
+    </Item>
+    <Item Name="Goblin's Blight" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="14" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="The pathetic little creatures flee before you">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="14" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="122;99;56" />
+      <Modifier Stat="Damage" Amount="160" />
+      <Modifier Stat="PoisonDamage" Amount="20" />
+      <Modifier Stat="StunChance" Amount="20" />
+    </Item>
+    <Item Name="The Reaper" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="12" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="An axe any dwarf would be proud to own">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="12" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="255;191;0" />
+      <Modifier Stat="LightningDamage" Amount="170" />
+      <Modifier Stat="StunChance" Amount="25" />
+    </Item>
+    <Item Name="Emberfeind" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="31" ValueAdjust="200" MinLevel="1" MaxLevel="8" Description="It burns with hunger to taste your enemies">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="31" />
+      <Particle ParticleType="Explosion" ParticleColor="0;0;0" />
+      <Modifier Stat="FireDamage" Amount="190" />
+      <Modifier Stat="BurnDamage" Amount="15" />
+      <Modifier Stat="MoveSpeed" Amount="15" />
+    </Item>
+    <Item Name="Scathing Rage" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="32" ValueAdjust="200" MinLevel="1" MaxLevel="9" Description="Your rage will guide you in desperate times. Let it take over.">
+      <Slot>Hand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="32" />
+      <Particle ParticleType="Glow" ParticleColor="0;255;59" />
+      <Modifier Stat="Damage" Amount="165" />
+      <Modifier Stat="BaseAttackSpeed" Amount="40" />
+      <Modifier Stat="CriticalHitChance" Amount="30" />
+      <Modifier Stat="LifeSteal" Amount="10" />
+    </Item>
+    <Item Name="Frozen Agony" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="30" ValueAdjust="200" MinLevel="1" MaxLevel="10" Description="Its touch is as cold as death itself">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="30" />
+      <Particle ParticleType="Glow" ParticleColor="0;131;255" />
+      <Modifier Stat="ColdDamage" Amount="170" />
+      <Modifier Stat="SlowChance" Amount="25" />
+      <Modifier Stat="BaseAttackSpeed" Amount="10" />
+    </Item>
+    <Item Name="Luster" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="70" ValueAdjust="200" MinLevel="1" MaxLevel="10" Description="There is no longer anything that you cannot afford">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="70" />
+      <Particle ParticleType="Glow" ParticleColor="255;167;74" />
+      <Modifier Stat="Damage" Amount="170" />
+      <Modifier Stat="GoldDrop" Amount="90" />
+      <Modifier Stat="MagicDrop" Amount="40" />
+    </Item>
+    <Item Name="Doom's Revenge" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="35" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="Crafted at Ember's Forge to have an edge that will never grow dull" >
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="35" />
+      <Particle ParticleType="Glow" ParticleColor="255;0;0" />
+      <Modifier Stat="Damage" Amount="170" />
+      <Modifier Stat="CriticalHitChance" Amount="20" />
+      <Modifier Stat="MagicResistance" Amount="20" />
+    </Item>
+    <Item Name="Deft Point" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="36" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="When you become more sift than the eye then everything is defenseless against you">
+      <Slot>Hand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="36" />
+      <Particle ParticleType="Starburst" ParticleColor="175;255;71" />
+      <Modifier Stat="Damage" Amount="140" />
+      <Modifier Stat="BaseAttackSpeed" Amount="30" />
+      <Modifier Stat="FearChance" Amount="15" />
+      <Modifier Stat="MoveSpeed" Amount="15" />
+      <Modifier Stat="BleedDamage" Amount="25" />
+    </Item>
+    <Item Name="Demon's Bane" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="57" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="Forged in the fires of Hell">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="57" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="170;12;0" />
+      <Modifier Stat="Damage" Amount="180" />
+      <Modifier Stat="BaseAttackSpeed" Amount="10" />
+      <Modifier Stat="BleedDamage" Amount="25" />
+      <Modifier Stat="PoisonDamage" Amount="25" />
+      <Modifier Stat="BurnDamage" Amount="25" />
+    </Item>
+    <Item Name="Ancient's Downfall" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="67" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="A relic left behind by the ancients of old">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="67" />
+      <Particle ParticleType="Starburst" ParticleColor="174;0;255" />
+      <Modifier Stat="Damage" Amount="200" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+      <Modifier Stat="FearChance" Amount="15" />
+      <Modifier Stat="SlowChance" Amount="15" />
+      <Modifier Stat="StunChance" Amount="15" />
+    </Item>
+    <Item Name="The Justifier" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="78" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="Justice will come to the unrepentant">
+      <Slot>Hand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="78" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="130;130;130" />
+      <Modifier Stat="Damage" Amount="175" />
+      <Modifier Stat="HealthRegen" Amount="40" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+      <Modifier Stat="Armor" Amount="40" />
+    </Item>
+    
+    
+    <!-- Two Hand -->
+    <Item Name="Glacierfold" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="15" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="The power of ice emanates from it in a cold wave">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="0;0;255" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="15" />
+      <Modifier Stat="ColdDamage" Amount="300" />
+      <Modifier Stat="BaseAttackSpeed" Amount="0" />
+      <Modifier Stat="SlowChance" Amount="50" />
+    </Item>
+    <Item Name="Dreadvex" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="19" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="And in the end of days many shall fall before the wraith of the Dreadvex">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="0;255;0" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="19" />
+      <Modifier Stat="Damage" Amount="300" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+      <Modifier Stat="StunChance" Amount="25" />
+      <Modifier Stat="PoisonDamage" Amount="25" />
+      <Modifier Stat="CriticalHitChance" Amount="10" />
+    </Item>
+    <Item Name="Warrior's Emnity" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="18" ValueAdjust="200" MinLevel="1" MaxLevel="6" Description="A warrior's greatest companion">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="161;0;255" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="18" />
+      <Modifier Stat="Damage" Amount="380" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-30" />
+      <Modifier Stat="Armor" Amount="50" />
+      <Modifier Stat="LifeSteal" Amount="15" />
+    </Item>
+    <Item Name="Blackbane" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="59" ValueAdjust="200" MinLevel="4" MaxLevel="12" Description="Its obsidian points spell the end to all who stand in its way">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="Starburst" ParticleColor="130;130;130" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="59" />
+      <Modifier Stat="Damage" Amount="380" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+      <Modifier Stat="CriticalHitChance" Amount="30" />
+    </Item>
+    <Item Name="Hades Point" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="44" ValueAdjust="200" MinLevel="6" MaxLevel="12" Description="Brought forth by a demon from the underworld">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="Starburst" ParticleColor="255;0;0" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="44" />
+      <Modifier Stat="Damage" Amount="350" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+      <Modifier Stat="FearChance" Amount="25" />
+      <Modifier Stat="BurnDamage" Amount="25" />
+    </Item>
+    <Item Name="Stormrage" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="63" ValueAdjust="200" MinLevel="8" MaxLevel="15" Description="It consumes the life around it without any mercy">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="0;255;67" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="63" />
+      <Modifier Stat="LightningDamage" Amount="340" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+      <Modifier Stat="LifeSteal" Amount="15" />
+      <Modifier Stat="ManaSteal" Amount="15" />
+    </Item>
+    <Item Name="The Inferno" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="34" ValueAdjust="200" MinLevel="10" MaxLevel="999" Description="Flames burst forth from the blade ready to take hold of prey">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="255;0;0" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="34" />
+      <Modifier Stat="FireDamage" Amount="320" />
+      <Modifier Stat="BurnDamage" Amount="25" />
+      <Modifier Stat="AttackSpeed" Amount="25" />
+    </Item>
+    <Item Name="Irongol" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="64" ValueAdjust="200" MinLevel="13" MaxLevel="999" Description="With Irongol at your defense you need not fear your enemies">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="130;130;130" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="64" />
+      <Modifier Stat="Damage" Amount="350" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+      <Modifier Stat="ReflectDamage" Amount="50" />
+    </Item>
+    <Item Name="Torment" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="45" ValueAdjust="200" MinLevel="15" MaxLevel="999" Description="The tormented screams of those that oppose you shall ring in your ears">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="0;255;255" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="45" />
+      <Modifier Stat="Damage" Amount="350" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-30" />
+      <Modifier Stat="BleedDamage" Amount="30" />
+      <Modifier Stat="PoisonDamage" Amount="30" />
+      <Modifier Stat="BurnDamage" Amount="30" />
+    </Item>
+    <Item Name="Radience" Level="5" Texture="ItemIcons" FramesPerRow="10" Frame="79" ValueAdjust="200" MinLevel="15" MaxLevel="999" Description="It shines with a bright golden light">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="Starburst" ParticleColor="0;255;255" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="79" />
+      <Modifier Stat="Damage" Amount="330" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+      <Modifier Stat="GoldDrop" Amount="100" />
+      <Modifier Stat="MagicDrop" Amount="50" />
+    </Item>
+
+
+
+    <!-- Shields -->
+    <Item Name="Thornbreak" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="86" ValueAdjust="200" MinLevel="1" MaxLevel="10" Description="It is covered in spikes and edges that look very dangerous">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="0;130;25" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="86" />
+      <Modifier Stat="Armor" Amount="280" />
+      <Modifier Stat="ReflectDamage" Amount="30" />
+      <Modifier Stat="Health" Amount="30" />
+    </Item>
+    <Item Name="The Baracade" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="87" ValueAdjust="200" MinLevel="5" MaxLevel="15" Description="This shield could hold back an entire army for days">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="130;130;130" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="87" />
+      <Modifier Stat="Armor" Amount="400" />
+      <Modifier Stat="HealthRegen" Amount="100" />
+      <Modifier Stat="ManaRegen" Amount="100" />
+    </Item>
+    <Item Name="Heaven's Protector" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="88" ValueAdjust="200" MinLevel="10" MaxLevel="20" Description="The light of righteousness surrounds this blessed shield">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="250;250;0" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="88" />
+      <Modifier Stat="Armor" Amount="310" />
+      <Modifier Stat="CriticalHitChance" Amount="20" />
+      <Modifier Stat="LifeSteal" Amount="15" />
+    </Item>
+    <Item Name="King's Bulwark" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="89" ValueAdjust="200" MinLevel="15" MaxLevel="999" Description="Built with the strength of a kings entire legion of knights">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="255;192;66" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="89" />
+      <Modifier Stat="Armor" Amount="300" />
+      <Modifier Stat="GoldDrop" Amount="100" />
+      <Modifier Stat="MagicDrop" Amount="50" />
+    </Item>
+    <Item Name="Drake's Defense" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="90" ValueAdjust="200" MinLevel="20" MaxLevel="999" Description="Passed through the crucible of dragons fire">
+      <Slot>OffHand</Slot>
+      <MerchantType>Warrior</MerchantType>
+      <Particle ParticleType="ExplosionWhite" ParticleColor="255;0;148" />
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="90" />
+      <Modifier Stat="Armor" Amount="280" />
+      <Modifier Stat="MagicResistance" Amount="30" />
+      <Modifier Stat="FireDamage" Amount="30" />
+    </Item>
+    
+
+
+
+    <!-- Bows -->
+    <Item Name="Evertrue" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="17" ValueAdjust="200" MinLevel="1" MaxLevel="7" Description="Its arrows find their targets as if they were alive">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="17" />
+      <Particle ParticleType="Glow" ParticleColor="255;0;216" />
+      <Modifier Stat="LightningDamage" Amount="200" />
+      <Modifier Stat="StunChance" Amount="30" />
+      <Modifier Stat="CriticalHitChance" Amount="20" />
+    </Item>
+    <Item Name="Plagueshot" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="1" ValueAdjust="200" MinLevel="1" MaxLevel="7" Description="It is a scourge to all who receive but a nick from the points of its plagued arrows">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="1" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="183;73;0" />
+      <Modifier Stat="Damage" Amount="200" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+      <Modifier Stat="PoisonDamage" Amount="35" />
+      <Modifier Stat="BleedDamage" Amount="15" />
+    </Item>
+    <Item Name="Ironoak's Justice" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="0" ValueAdjust="200" MinLevel="1" MaxLevel="9" Description="Crafted from the trunk of an Ironoak">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="0" />
+      <Particle ParticleType="Glow" ParticleColor="0;153;255" />
+      <Modifier Stat="Damage" Amount="290" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+      <Modifier Stat="Armor" Amount="30" />
+      <Modifier Stat="MagicResistance" Amount="30" />
+    </Item>
+    <Item Name="Pillager" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="56" ValueAdjust="200" MinLevel="1" MaxLevel="17" Description="A well aimed arrow can easily slit open a purse without even being detected">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="56" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="136;255;0" />
+      <Modifier Stat="Damage" Amount="150" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+      <Modifier Stat="GoldDrop" Amount="80" />
+      <Modifier Stat="MagicDrop" Amount="60" />
+    </Item>
+    <Item Name="Willow's Zeal" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="43" ValueAdjust="200" MinLevel="1" MaxLevel="10" Description="When all of the elements are combined they produce a force beyond reason">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="43" />
+      <Particle ParticleType="Glow" ParticleColor="255;76;0" />
+      <Modifier Stat="FireDamage" Amount="60" />
+      <Modifier Stat="ColdDamage" Amount="60" />
+      <Modifier Stat="LightningDamage" Amount="60" />
+      <Modifier Stat="BleedDamage" Amount="20" />
+      <Modifier Stat="PoisonDamage" Amount="20" />
+      <Modifier Stat="BurnDamage" Amount="20" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+    </Item>
+    <Item Name="Deliverer" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="55" ValueAdjust="200" MinLevel="1" MaxLevel="15" Description="The best friend a man could have in a desperate situation">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="55" />
+      <Particle ParticleType="Starburst" ParticleColor="255;255;255" />
+      <Modifier Stat="Damage" Amount="200" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-10" />
+      <Modifier Stat="MoveSpeed" Amount="30" />
+      <Modifier Stat="HealthRegen" Amount="40" />
+      <Modifier Stat="ManaRegen" Amount="40" />
+      <Modifier Stat="Health" Amount="10" />
+      <Modifier Stat="Mana" Amount="10" />
+    </Item>
+    <Item Name="Embershot" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="61" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="Each arrow burns as it soars unstoppably towards its target">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="61" />
+      <Particle ParticleType="Explosion" ParticleColor="255;255;255" />
+      <Modifier Stat="FireDamage" Amount="210" />
+      <Modifier Stat="BurnDamage" Amount="30" />
+      <Modifier Stat="MoveSpeed" Amount="15" />
+    </Item>
+    <Item Name="Midnight's Song" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="66" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="It rains the tones of death upon its enemies">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="66" />
+      <Particle ParticleType="ExplosionWhite" ParticleColor="178;0;255" />
+      <Modifier Stat="Damage" Amount="220" />
+      <Modifier Stat="CriticalHitChance" Amount="20" />
+      <Modifier Stat="MagicResistance" Amount="20" />
+      <Modifier Stat="MoveSpeed" Amount="15" />
+    </Item>
+    <Item Name="Hailstorm" Level="1" Texture="ItemIcons" FramesPerRow="10" Frame="85" ValueAdjust="200" MinLevel="1" MaxLevel="999" Description="and the skies shall open forth and pour out the icy rage upon the earth.">
+      <Slot>TwoHand</Slot>
+      <MerchantType>Rogue</MerchantType>
+      <Ranged>true</Ranged>
+      <Icon Texture="ItemIcons" FramesPerRow="10" Frame="85" />
+      <Particle ParticleType="Starburst" ParticleColor="182;255;0" />
+      <Modifier Stat="ColdDamage" Amount="300" />
+      <Modifier Stat="SlowChance" Amount="50" />
+      <Modifier Stat="BaseAttackSpeed" Amount="-20" />
+    </Item>
+    
+    
+    
+
+  </Equipable>
+</Items>
